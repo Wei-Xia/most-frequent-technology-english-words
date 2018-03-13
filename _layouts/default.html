@@ -1,7 +1,6 @@
 {% include header.html content="index"%}
 <main>
-	<h1>Anyway.{{ page.title | remove_first: "主" | remove_first: "副" | capitalize }}</h1>
+	<h1>{{ page.title }}</h1>
 	{{ content }}
-	<div class="post-deco-number">0{{ page.post-number }}</div>
 </main>
 {% include footer.html %}

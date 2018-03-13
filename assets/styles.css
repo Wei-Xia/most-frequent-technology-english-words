@@ -30,10 +30,6 @@ a{
 ol, ul{
 	list-style-position: inside;
 }
-::selection{
-	background: #f60c3e;
-	color: #fff;
-}
 /*~Fonts*/
 @font-face {
 	font-family: 'Anyway Type';
@@ -74,59 +70,6 @@ ol, ul{
 .ml,.ml2{left: 0;}
 .mr,.mr2{right: 0;}
 .ml2,.mr2{bottom: none;top: 0;}
-/* ~Sidebar */
-aside{
-	width: 16vw;
-	background: #fff;
-	height: 100vh;
-	position: fixed;
-	border-right: 1px dotted #ddd;
-}
-.nav{
-	text-align: left;
-	display: flex;
-	width: 100%;
-	flex-direction: column;
-	margin-bottom: 2rem;
-	padding: 0 1rem 0 0;
-}
-.nav li{
-	font-size: .8rem;
-	list-style: none;
-	display: inline-block;
-	font-size: .875rem;
-	color: #444;
-	letter-spacing: .2em;
-}
-.nav .nav-label{
-	padding: .1em 2rem .2em;
-	text-align: left;
-	font-weight: 400;
-	color: #bbb;
-	/* background: #eee; */
-	font-size: .75rem;
-}
-.nav li a{
-	color: #333;
-	display: block;
-	padding: .8rem 0 .8rem 2rem;
-	border-bottom: 1px dotted #ddd;
-	font-weight: 400;
-}
-.nav li:last-child a{
-	border-color: #fafafa;
-}
-.nav li a:hover{
-	color: #f60c3e;
-	border-style: solid;
-	border-color: #f60c3e;
-}
-.nav li a span{
-	color: #f60c3e;
-	font-feature-settings: 'tnum';
-	font-weight: 700;
-	margin: 0 1em 0 0
-}
 
 .nav-sub li a{
 	/* border-left: .4em solid #ffe324; */
@@ -257,12 +200,35 @@ main a:hover{
 main img{
 	max-width: 100%;
 }
-.post-deco-number{
-	position: absolute;
-	right: 0em;
-	top: -.3em;
+
+/* ~Word List */
+.item{
+	border-bottom: 1px dotted #999;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: left;
+	padding: .5em 0;
+}
+.item-header{
+	font-size: .75em;
 	font-weight: 700;
-	font-size: 17rem;
-	line-height: 1;
-	color: #f5f5f5;
+}
+.word{
+	flex-grow: 1;
+	flex-basis: 20%;
+	font-weight: 700;
+}
+.correct{
+	flex-grow: 1;
+	flex-basis: 15%;
+	font-family: serif;
+}
+.wrong{
+	flex-grow: 1;
+	flex-basis: 15%;
+}
+.note{
+	flex-grow: 2;
+	flex-basis: 50%;
 }
