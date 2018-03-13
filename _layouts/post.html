@@ -1,0 +1,6 @@
+<h1>{{ post.title | remove_first: "主" | capitalize }}</h1>
+<p class="meta">{{ page.date | date_to_string }}</p>
+
+<div class="post">
+  {{ content }}
+</div>
