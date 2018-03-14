@@ -12,11 +12,9 @@ html{
 }
 body{
 	font-family: 'Anyway Type', 'Myriad Pro', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-	color: #444;
+	color: #555;
 	font-size: 62.5%;
 	text-align: center;
-	display: flex;
-	flex-direction: row;
 	background: #fff;
 }
 a{
@@ -71,47 +69,24 @@ ol, ul{
 .mr,.mr2{right: 0;}
 .ml2,.mr2{bottom: none;top: 0;}
 
-.nav-sub li a{
-	/* border-left: .4em solid #ffe324; */
-}
+
 /*~Footer*/
 footer{
 	padding: 2em 0;
 	color: #fff;
 	display: block;
 }
-.site-title{
-	font-size: 2rem;
-	font-weight: 700;
-}
-.logo{
-	text-align: center;
-	width: 100%;
-	color: #fff;
-	font-size: 1rem;
-	padding: .4em 0;
-	line-height: 1;
-	font-weight: 700;
-	background: #fff;
-	color: #333;
-}
-.logo img{
-	max-width: 80%;
-}
+
 
 /*~Main*/
 main{
-	height: 100%;
 	min-height: 100vh;
-	overflow: hidden;
-	color: #555;
 	display: block;
-	text-align: left;
-	padding: 4em 12em;
-	flex-grow: 1;
+	padding: 4em 5%;
 	line-height: 1.65;
 	font-size: 1rem;
-	position: relative;
+	max-width: 80em;
+	margin: 0 auto;
 	animation: slowShow .3s cubic-bezier(1,0,.5,.5) 0s;
 }
 @keyframes slowShow {
@@ -133,10 +108,10 @@ h2{
 	letter-spacing: .1em;
 	position: relative;
 }
-
 .tagline{
 	margin: 0 0 3em;
 }
+
 /* ~Word List */
 .item{
 	border-bottom: 1px dotted #ddd;
@@ -144,7 +119,8 @@ h2{
 	flex-direction: row;
 	justify-content: space-between;
 	text-align: left;
-	padding: .5em 1em;
+	padding: .5em 1rem;
+	transition: all .25s cubic-bezier(.5,0,.5,.5) 0s;
 }
 .item:nth-child(2n){
 	background: #fcfcfc;
@@ -155,15 +131,25 @@ h2{
 }
 .item-header{
 	font-size: .75em;
-	font-weight: 700;
+	position: -webkit-sticky;
+  position: sticky;
+	top: .8rem;
+	font-weight: 400;
+	color: #666;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 -.1em 0 #fff;
+}
+.item-header:hover{
+	background: #fff;
 }
 .word{
 	flex-basis: 15%;
 	font-weight: 700;
 }
 .meaning{
-	flex-basis: 15%;
-	font-weight: 700;
+	flex-basis: 25%;
+	font-weight: 400;
 }
 .correct{
 	flex-basis: 20%;
@@ -174,5 +160,5 @@ h2{
 }
 .note{
 	flex-grow: 2;
-	flex-basis: 30%;
+	flex-basis: 15%;
 }

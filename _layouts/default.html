@@ -1,6 +1,43 @@
-{% include header.html content="index"%}
-<main>
-	<h1>Anyway.ABC</h1>
-	{{ content }}
-</main>
-{% include footer.html %}
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ page.title }}</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="author" content="JJ Ying" />
+	<meta name="description" content="设计师经常念错的单词"/>
+
+	<link rel="stylesheet" href="assets/styles.css">
+	<link rel="icon" href="https://anw.red/anyway.fm/favicon-16.png" sizes="16x16">
+	<link rel="icon" href="https://anw.red/anyway.fm/favicon-local.png" sizes="32x32">
+	<link rel="icon" href="https://anw.red/anyway.fm/favicon-96.png" sizes="96x96">
+	<link rel="apple-touch-icon" href="https://anw.red/anyway.fm/apple-touch-icon-precomposed.png">
+</head>
+
+<body>
+	<div class="mask mt"></div>
+	<div class="mask mb"></div>
+	<div class="mask mv ml"></div>
+	<div class="mask mv mr"></div>
+	<div class="mask mv ml2"></div>
+	<div class="mask mv mr2"></div>
+
+	<main>
+		<h1>Anyway.ABC</h1>
+		{{ content }}
+	</main>
+
+
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "//hm.baidu.com/hm.js?d6fc362c05908e5ce8d17df52dbc2586";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+
+</body>
+</html>
