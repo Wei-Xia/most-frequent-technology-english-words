@@ -9,23 +9,22 @@ title: Anyway.ABC
 
  <div class="word-table">
    <div class="item item-header">
-       <div class="word">⌘ 单词</div>
-       <div class="meaning">⇢ 翻译</div>
-       <div class="correct">✓ 正确发音</div>
-       <div class="wrong">✗ 常见错误发音</div>
-       <div class="note">✎ 备注</div>
+     <div class="word">⌘ 单词</div>
+     <div class="meaning">⇢ 翻译</div>
+     <div class="correct">✓ 正确发音</div>
+     <div class="wrong">✗ 常见错误发音</div>
+     <div class="note">✎ 备注</div>
    </div>
 
    {% for post in site.posts %}
    <div class="item">
-       <div class="word">{{ post.word }}</div>
-       <div class="meaning">{{ post.meaning }}</div>
-       <div class="correct">/ {{ post.correct }} / <a href="https://raw.githubusercontent.com/JJYing/Anyway.ABC/master/voice/width.mp3?token=AAeL4kJEDOSY1AsBdMvkQ0Hmrp2ALHNTks5asc-gwA%3D%3D">🔈</a></div>
-       <div class="wrong">{{ post.wrong }}
-         <a v-on:click="playNow('{{ post.title  |  downcase }}')">🔈</a>
-
-       </div>
-       <div class="note">{{ post.note }}</div>
+     <div class="word">{{ post.word }}</div>
+     <div class="meaning">{{ post.meaning }}</div>
+     <div class="correct">/ {{ post.correct }} /
+       <a v-on:click="playNow('{{ post.title  |  downcase }}')">🔈</a>
+     </div>
+     <div class="wrong">{{ post.wrong }}</div>
+     <div class="note">{{ post.note }}</div>
    </div>
    {% endfor %}
 

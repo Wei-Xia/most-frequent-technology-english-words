@@ -9,6 +9,7 @@ var a = new Vue({
       audio.pause()
       a.currentWord = word
       var newAudio = setTimeout("audio.play()",100)
+      console.log(word);
     }
   }
 })
