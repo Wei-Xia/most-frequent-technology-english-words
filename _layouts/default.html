@@ -23,20 +23,36 @@
 	<div class="mask mv ml2"></div>
 	<div class="mask mv mr2"></div>
 
-	<main>
+	<main id="abc">
 		<h1>Anyway.ABC</h1>
 		{{ content }}
+
+		<audio :src="'https://anw.red/anyway.abc/audio/'+currentWord+'.mp3'" id="voice-file">
 	</main>
 
+	<script src="assets/vue.js"></script>
+	<script src="assets/main.js"></script>
 
+
+	<!-- ~Baidu Analytics -->
 	<script>
 		var _hmt = _hmt || [];
 		(function() {
-			var hm = document.createElement("script");
-			hm.src = "//hm.baidu.com/hm.js?d6fc362c05908e5ce8d17df52dbc2586";
-			var s = document.getElementsByTagName("script")[0];
-			s.parentNode.insertBefore(hm, s);
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?d6fc362c05908e5ce8d17df52dbc2586";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
 		})();
+	</script>
+
+	<!-- ~Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94081953-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-94081953-2');
 	</script>
 
 </body>
