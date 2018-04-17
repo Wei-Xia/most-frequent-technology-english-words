@@ -8,6 +8,7 @@ title: Anyway.ABC
 </div>
 
 <div class="word-table">
+
  <div class="item-header">
    <div class="word">
      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -41,7 +42,7 @@ title: Anyway.ABC
    <div class="note">
      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink">
        <path d="M24 51.9a8 8 0 0 1 8 8v-44a8 8 0 0 0-8-8H2v44zm8-36a8 8 0 0 1 8-8h22v44H40a8 8 0 0 0-8 8"></path>
-       <path d="M10 17.9h14m-14 8h14m-14 8h14m-14 8h14m16-24h14m-14 8h14m-14 8h14m-14 8h14"></path>
+       <path d="M10 20h14m-14 8h14m-14 8h14m16-16h14m-14 8h14m-14 8h14"></path>
      </svg>
      <div>备注</div>
    </div>
@@ -49,7 +50,7 @@ title: Anyway.ABC
 
  {% for category in site.categories | sort %}
    {% capture category_name %}{{ category | first }}{% endcapture %}
-   <div class="category-label">{{ category }}</div>
+   <div class="category-label">{{ category }}123</div>
    {% for post in site.categories[category_name ] %}
     <div class="item" :class=" nowPlaying == true & currentWord == '{{ post.word }}' ? 'playing' : '' ">
       <div class="word"><span>{{ post.word }}</span></div>

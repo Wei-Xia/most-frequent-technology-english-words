@@ -12,10 +12,18 @@
 	<link rel="icon" href="https://anw.red/anyway.fm/favicon-16.png" sizes="16x16">
 	<link rel="icon" href="https://anw.red/anyway.fm/favicon-local.png" sizes="32x32">
 	<link rel="icon" href="https://anw.red/anyway.fm/favicon-96.png" sizes="96x96">
-	<link rel="apple-touch-icon" href="https://anw.red/anyway.fm/apple-touch-icon-precomposed.png">
+
 </head>
 
 <body>
+
+	<main id="abc">
+		<h1>Anyway.ABC</h1>
+		{{ content }}
+
+		<audio :src="'https://anw.red/anyway.abc/audio/'+currentWord+'.mp3'" id="voice-file" loop preload="none">
+	</main>
+
 	<div class="mask mt"></div>
 	<div class="mask mb"></div>
 	<div class="mask mv ml"></div>
@@ -23,16 +31,8 @@
 	<div class="mask mv ml2"></div>
 	<div class="mask mv mr2"></div>
 
-	<main id="abc">
-		<h1>Anyway.ABC</h1>
-		{{ content }}
-
-		<audio :src="'https://anw.red/anyway.abc/audio/'+currentWord+'.mp3'" id="voice-file" loop>
-	</main>
-
 	<script src="assets/vue.js"></script>
 	<script src="assets/main.js"></script>
-
 
 	<!-- ~Baidu Analytics -->
 	<script>
