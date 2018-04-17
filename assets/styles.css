@@ -24,6 +24,7 @@ a{
 ::selection{
 	background: #ffe324;
 	color: #fff;
+	text-shadow: none;
 }
 ol, ul{
 	list-style-position: inside;
@@ -47,9 +48,10 @@ ol, ul{
 }
 .mask{
 	position: fixed;
-	z-index: 9999;
+	z-index: 999;
 	border: .4rem solid #ffe324;
 	background: #ffe324;
+	will-change: transform;
 }
 .mt, .mb{
 	height: 0;
@@ -128,8 +130,8 @@ h2{
 	background: #ffe324;
 	color: #222;
 }
-.item-header{
-	font-size: .75em;
+.item.item-header{
+	font-size: .75rem;
 	position: -webkit-sticky;
   position: sticky;
 	top: .8rem;
@@ -138,23 +140,34 @@ h2{
 	background: #fff;
 	border-bottom: 1px solid #ddd;
 	box-shadow: 0 -.1em 0 #fff;
+	z-index: 9;
 }
 .item-header:hover{
 	background: #fff;
 }
 .category-label{
-	border-bottom: 1px dotted #f5f5f5;
+	/* border-bottom: 1px dotted #f5f5f5; */
 	text-align: left;
 	font-weight: 400;
 	font-size: .75rem;
 	background: #f5f5f5;
-	color: #aaa;
+	color: #999;
 	padding: .2em 1rem;
+	display: flex;
+	align-items: center;
+	margin: 4em 0 0;
+}
+.category-label:nth-of-type(2){
+	margin: 0;
 }
 .word{
 	flex-basis: 15%;
 	font-weight: 700;
 	font-size: 1rem;
+}
+.item-header .word{
+	font-size: .75rem;
+	font-weight: 400;
 }
 .word span{
 	position: relative;
@@ -173,30 +186,79 @@ h2{
 	background: #ffe324;
 	position: absolute;
 	width: 100%;
-	height: .2em;
+	height: 2px;
 	content: "";
 	bottom: 0;
 	left: 0;
 	z-index: -9;
 	transition: all .25s cubic-bezier(.5,0,.5,.5) 0s;
+	will-change: transform;
 }
 .item:hover .word span:after{
 	/* background: #fff; */
-	width: 0;
+	transform: scale(0,1.1);
 	transition-duration: .1s;
 }
 .meaning{
 	flex-basis: 25%;
 	font-weight: 400;
+	display: flex;
+	align-items: center;
 }
 .correct{
 	flex-basis: 20%;
 	font-family: sans-serif;
+	display: flex;
+	align-items: center;
+}
+.correct a{
+	height: 1rem;
+	padding: 0 .5em;
+	cursor: pointer;
+}
+.correct svg{
+	width: 1rem;
+	height: 1rem;
+	fill: none;
+	stroke: #999;
+	stroke-miterlimit: 10px;
+	stroke-width: 4px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	transition: all .5s cubic-bezier(.5,0,.5,.5) 0s;
+}
+.playing .correct svg{
+	stroke: #333;
+}
+.playing .ani-path{
+	animation: audio-icon .6s ease-in-out .45s infinite;
+}
+.playing .ani-path-2{
+	animation: audio-icon .6s ease-in-out .1s infinite;
+}
+@keyframes audio-icon {
+	0%{opacity: 0;}
+	40%{opacity: 1;}
+	60%{opacity: 1;}
+	100%{opacity: 0;}
+}
+.item:hover .correct svg{
+	stroke: #333;
 }
 .wrong{
 	flex-basis: 15%;
+	display: flex;
+	align-items: center;
 }
 .note{
 	flex-grow: 2;
 	flex-basis: 15%;
+	display: flex;
+	align-items: center;
+}
+.note a{
+	text-decoration: underline;
+	display: inline;
+	text-decoration-style: dotted;
+	color: #333;
 }

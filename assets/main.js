@@ -2,14 +2,30 @@ var a = new Vue({
   el: '#abc',
   data: {
     nowPlaying: false,
-    currentWord: "width"
+    currentWord: "anyway"
   },
   methods: {
     playNow: function (word) {
-      audio.pause()
-      a.currentWord = word
-      var newAudio = setTimeout("audio.play()",100)
-      console.log(word);
+      if ( word != a.currentWord) {
+        a.nowPlaying = true
+        a.currentWord = word
+        var newAudio = setTimeout("audio.play()",50)
+        console.log(a.nowPlaying);
+      }
+      else {
+        if (a.nowPlaying == true) {
+          audio.pause()
+          a.nowPlaying = false;
+          console.log('paused');
+        }
+        else {
+          a.nowPlaying = true
+          a.currentWord = word
+          var newAudio = setTimeout("audio.play()",50)
+          console.log(a.nowPlaying);
+        }
+      }
+
     }
   }
 })
