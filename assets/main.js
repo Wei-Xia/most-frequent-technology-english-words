@@ -6,24 +6,16 @@ var a = new Vue({
   },
   methods: {
     playNow: function (word) {
-      if ( word != a.currentWord) {
+      if ( word == a.currentWord) {
+        audio.pause()
+        a.nowPlaying = false;
+        console.log('paused');
+      }
+      else {
         a.nowPlaying = true
         a.currentWord = word
         var newAudio = setTimeout("audio.play()",50)
         console.log(a.nowPlaying);
-      }
-      else {
-        if (a.nowPlaying == true) {
-          audio.pause()
-          a.nowPlaying = false;
-          console.log('paused');
-        }
-        else {
-          a.nowPlaying = true
-          a.currentWord = word
-          var newAudio = setTimeout("audio.play()",50)
-          console.log(a.nowPlaying);
-        }
       }
 
     }
