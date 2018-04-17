@@ -1,5 +1,5 @@
 ---
-layout: dev
+layout: default
 title: Anyway.ABC
 ---
 
@@ -7,8 +7,8 @@ title: Anyway.ABC
   <div class="item-header">
     <div class="word">
       <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <ellipse ry="30" rx="16" cy="32" cx="32"></ellipse>
-        <path d="M4.5 32h55M32 2v60"></path>
+        <ellipse ry="30" rx="16" cy="32" cx="32" class="layer-2"></ellipse>
+        <path d="M4.5 32h55M32 2v60" class="layer-2"></path>
         <circle  r="30" cy="32" cx="32"></circle>
       </svg>
       <div>单词</div>
@@ -27,7 +27,7 @@ title: Anyway.ABC
         <path d="M15.74 30l12 14 34-42"></path>
         <path d="M53.443 32A26.002 26.002 0 1 1 27.75 10a25.914 25.914 0 0 1 10 1.993"></path>
       </svg>
-      <div>正确发音</div>
+      <div>正确<span class="mobile-hide">发音</span></div>
     </div>
 
     <div class="wrong">
@@ -35,7 +35,7 @@ title: Anyway.ABC
         <circle cx="32.001" cy="32" r="30"></circle>
         <path d="M42.999 21.001l-22 22m22 0L21 21"></path>
       </svg>
-      <div><span class="mobile-hide">常见</span>错误发音</div>
+      <div><span class="mobile-hide">常见</span>错误<span class="mobile-hide">发音</span></div>
     </div>
 
     <div class="note mobile-hide">

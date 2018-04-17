@@ -95,6 +95,15 @@ ol, ul{
 }
 .the-end p{
 	color: #ffe324;
+	animation: square-rotate 10s ease-in-out infinite;
+}
+@keyframes square-rotate {
+	0%{transform: none;}
+	90%{transform: none;}
+	94%{transform: rotate(1.1turn);}
+	96%{transform: rotate(.95turn);}
+	98%{transform: rotate(1.03turn);}
+	100%{transform: rotate(1turn);}
 }
 /*~Footer*/
 footer{
@@ -235,6 +244,9 @@ h1 sup {
 	stroke-linecap: round;
 	margin: 0 .5em 0 0;
 }
+/* .layer-2{
+ stroke: #bbb;
+} */
 .category-label{
 	/* border-bottom: 1px dotted #f5f5f5; */
 	text-align: left;
@@ -356,9 +368,9 @@ h1 sup {
 }
 @media screen and (max-width: 1000px) {
 	main{
-		padding: 4em .38rem;
+		padding: 4em .08rem 4em .38rem;
 	}
-	* * .mobile-hide{
+	.mobile-hide{
 		display: none;
 	}
 	.mask{
@@ -381,6 +393,7 @@ h1 sup {
 	.item,
 	.item-header{
 		flex-wrap: wrap;
+		padding: .5em .75rem;
 	}
 	.item{
 		font-size: .75rem;
@@ -389,17 +402,21 @@ h1 sup {
 		font-size: .75rem;
 		top: .2rem;
 	}
+	.item-header .word,
+	.item-header .note{
+		display: none;
+	}
 	.word{
 		flex-basis: 100%;
 	}
 	.meaning{
-		flex-basis: 42%;
+		flex-basis: 40%;
 	}
 	.correct{
-		flex-basis: 43%;
+		flex-basis: 40%;
 	}
 	.wrong{
-		flex-basis: 15%;
+		flex-basis: 20%;
 	}
 	.note{
 		flex-basis: 100%;
