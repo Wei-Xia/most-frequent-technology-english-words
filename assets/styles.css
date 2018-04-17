@@ -13,7 +13,6 @@ html{
 body{
 	font-family: 'Anyway Type', 'Myriad Pro', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
 	color: #555;
-	font-size: 62.5%;
 	text-align: center;
 	background: #fff;
 }
@@ -94,22 +93,22 @@ main{
 	100% {opacity: 1;}
 }
 h1{
-	font-size: 3em;
-	color: #555;
+	font-size: 5rem;
+	color: #333;
 	font-weight: 700;
 	font-feature-settings: 'tnum';
 	font-family: 'Calluna';
 }
-h2{
-	font-size: 1.5em;
-	color: #ffe324;
-	font-weight: 700;
-	margin: .5em 0 .5em;
-	letter-spacing: .1em;
-	position: relative;
-}
 .tagline{
-	margin: 0 0 3em;
+	font-size: 1rem;
+	font-weight: 400;
+	max-width: 80ch;
+	text-align: left;
+	margin: .5em auto 3em;
+	border: 3px solid #ffe324;
+	border-left: none;
+	border-right: none;
+	padding: 1em 2em;
 }
 
 /* ~Word List */
@@ -285,4 +284,41 @@ h2{
 	display: inline;
 	text-decoration-style: dotted;
 	color: #333;
+}
+
+@media screen and (max-width: 1000px) {
+	main{
+		padding: 4em 2%;
+	}
+	* * .mobile-hide{
+		display: none;
+	}
+	h1{
+		font-size: 2.5rem;
+	}
+	.item,
+	.item-header{
+		flex-wrap: wrap;
+	}
+	.item{
+		font-size: .75rem;
+	}
+	.item-header{
+		font-size: .75rem;
+	}
+	.word{
+		flex-basis: 100%;
+	}
+	.meaning{
+		flex-basis: 42%;
+	}
+	.correct{
+		flex-basis: 43%;
+	}
+	.wrong{
+		flex-basis: 15%;
+	}
+	.note{
+		flex-basis: 100%;
+	}
 }
