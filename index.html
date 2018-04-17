@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: dev
 title: Anyway.ABC
 ---
 
@@ -7,8 +7,8 @@ title: Anyway.ABC
   <div class="item-header">
     <div class="word">
       <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <ellipse ry="30" rx="16.1" cy="32" cx="32"></ellipse>
-        <path d="M4.5 44h55m-55-24h55M32 2v60"></path>
+        <ellipse ry="30" rx="16" cy="32" cx="32"></ellipse>
+        <path d="M4.5 32h55M32 2v60"></path>
         <circle  r="30" cy="32" cx="32"></circle>
       </svg>
       <div>单词</div>
@@ -50,7 +50,8 @@ title: Anyway.ABC
 
   {% for category in site.categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div class="category-label">{{ category_name }}</div>
+    {% assign number = forloop.index %}
+    <div class="category-label"><span><strong>0{{ number }}.</strong> {{ category_name }}</span></div>
     {% for post in site.categories[category_name ] %}
     <div class="item" :class=" nowPlaying == true & currentWord == '{{ post.word }}' ? 'playing' : '' ">
       <div class="word"><span>{{ post.word }}</span></div>

@@ -27,6 +27,11 @@ a{
 	background: #ffe324;
 	color: #000;
 	text-shadow: none;
+	transition: all .15s ease-in-out;
+}
+.item:hover ::selection{
+	background: #333;
+	color: #ffee79;
 }
 ol, ul{
 	list-style-position: inside;
@@ -81,6 +86,7 @@ ol, ul{
 .ml,.ml2{left: 0;}
 .mr,.mr2{right: 0;}
 .ml2,.mr2{bottom: none;top: 0;}
+
 /* ~The End */
 .the-end{
 	font-size: 2rem;
@@ -132,7 +138,7 @@ h1{
 	color: #333;
 	font-weight: 700;
 	font-feature-settings: 'tnum';
-	font-family: 'Calluna';
+	font-family: "Anyway Serif", "Title Serif", "Source Han Serif SC","Songti SC", SimSun, serif;
 	display: block;
 	text-align: left;
 	margin: 0 1em 0 0;
@@ -241,7 +247,7 @@ h1 sup {
 	align-items: center;
 	margin: 4em 0 0;
 }
-.category-label:nth-of-type(2){
+.category-label:nth-child(2){
 	margin: 0;
 }
 .word{
@@ -381,6 +387,7 @@ h1 sup {
 	}
 	.item-header{
 		font-size: .75rem;
+		top: .2rem;
 	}
 	.word{
 		flex-basis: 100%;

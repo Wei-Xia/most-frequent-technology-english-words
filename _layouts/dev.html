@@ -45,10 +45,35 @@
 	<div class="mask mv mr2"></div>
 
 	<script src="assets/vue.js"></script>
-	<script src="assets/main.js"></script>
 
-	<!-- ~Baidu Analytics -->
 	<script>
+		var a = new Vue({
+			el: '#abc',
+			data: {
+				nowPlaying: false,
+				currentWord: "anyway"
+			},
+			methods: {
+				playNow: function (word) {
+					if ( word == a.currentWord) {
+						audio.pause()
+						a.nowPlaying = false;
+					}
+					else {
+						a.nowPlaying = true
+						a.currentWord = word
+						var newAudio = setTimeout("audio.play()",50)
+					}
+
+				}
+			}
+		})
+
+		window.onload = function(){
+			audio = document.getElementById("voice-file")
+		}
+
+		<!-- ~Baidu Analytics -->
 		var _hmt = _hmt || [];
 		(function() {
 		var hm = document.createElement("script");
@@ -64,7 +89,6 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'UA-94081953-2');
 	</script>
 
