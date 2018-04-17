@@ -35,10 +35,10 @@ title: Anyway.ABC
         <circle cx="32.001" cy="32" r="30"></circle>
         <path d="M42.999 21.001l-22 22m22 0L21 21"></path>
       </svg>
-      <div>常见错误发音</div>
+      <div><span class="mobile-hide">常见</span>错误发音</div>
     </div>
 
-    <div class="note">
+    <div class="note mobile-hide">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M24 51.9a8 8 0 0 1 8 8v-44a8 8 0 0 0-8-8H2v44zm8-36a8 8 0 0 1 8-8h22v44H40a8 8 0 0 0-8 8"></path>
         <path d="M10 20h14m-14 8h14m-14 8h14m16-16h14m-14 8h14m-14 8h14"></path>
@@ -50,7 +50,7 @@ title: Anyway.ABC
 
   {% for category in site.categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div class="category-label">1234567{{ category_name }}456</div>
+    <div class="category-label">{{ category_name }}</div>
     {% for post in site.categories[category_name ] %}
     <div class="item" :class=" nowPlaying == true & currentWord == '{{ post.word }}' ? 'playing' : '' ">
       <div class="word"><span>{{ post.word }}</span></div>
