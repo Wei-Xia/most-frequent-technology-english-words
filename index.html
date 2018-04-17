@@ -50,7 +50,7 @@ title: Anyway.ABC
 
   {% for category in site.categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div class="category-label">{{ category }}123</div>
+    <div class="category-label">123{{ category }}456</div>
     {% for post in site.categories[category_name ] %}
     <div class="item" :class=" nowPlaying == true & currentWord == '{{ post.word }}' ? 'playing' : '' ">
       <div class="word"><span>{{ post.word }}</span></div>
