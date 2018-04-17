@@ -8,12 +8,43 @@ title: Anyway.ABC
 </div>
 
 <div class="word-table">
- <div class="item item-header">
-   <div class="word">⌘ 单词</div>
-   <div class="meaning">⇢ 翻译</div>
-   <div class="correct">✔︎ 正确发音</div>
-   <div class="wrong">✘ 常见错误发音</div>
-   <div class="note">✎ 备注</div>
+ <div class="item-header">
+   <div class="word">
+     <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <ellipse ry="30" rx="16.1" cy="32" cx="32"></ellipse>
+       <path d="M4.5 44h55m-55-24h55M32 2v60"></path>
+       <circle  r="30" cy="32" cx="32"></circle>
+     </svg>
+     <div>单词</div>
+   </div>
+   <div class="meaning">
+     <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <path d="M11 44l-8 8 8 8m42-40l8-8-8-8"></path>
+       <path d="M60.8 12H12A10 10 0 0 0 2 22a10 10 0 0 0 10 10h40a10 10 0 0 1 10 10 10 10 0 0 1-10 10H3"></path>
+     </svg>
+     <div>翻译</div>
+   </div>
+   <div class="correct">
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <path d="M15.74 30l12 14 34-42"></path>
+       <path d="M53.443 32A26.002 26.002 0 1 1 27.75 10a25.914 25.914 0 0 1 10 1.993"></path>
+     </svg>
+     <div>正确发音</div>
+    </div>
+   <div class="wrong">
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <circle cx="32.001" cy="32" r="30"></circle>
+       <path d="M42.999 21.001l-22 22m22 0L21 21"></path>
+     </svg>
+     <div>常见错误发音</div>
+   </div>
+   <div class="note">
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <path d="M24 51.9a8 8 0 0 1 8 8v-44a8 8 0 0 0-8-8H2v44zm8-36a8 8 0 0 1 8-8h22v44H40a8 8 0 0 0-8 8"></path>
+       <path d="M10 17.9h14m-14 8h14m-14 8h14m-14 8h14m16-24h14m-14 8h14m-14 8h14m-14 8h14"></path>
+     </svg>
+     <div>备注</div>
+   </div>
  </div>
 
  {% for category in site.categories | sort %}
@@ -25,7 +56,7 @@ title: Anyway.ABC
       <div class="meaning">{{ post.meaning }}</div>
       <div class="correct">{{ post.correct }}
         <a v-on:click="playNow('{{ post.title  |  downcase }}')">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"  xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"  xmlns:xlink="http://www.w3.org/1999/xlink" class="audio-icon">
             <path d="M44.2 21.8a12 12 0 0 1 0 20.5" class="ani-path"></path>
             <path d="M50 16a20 20 0 0 1 0 32" class="ani-path-2"></path>
             <path d="M38 6L20 24H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12l18 18z"></path>

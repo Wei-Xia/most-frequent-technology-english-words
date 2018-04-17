@@ -116,7 +116,6 @@ h2{
 .item{
 	border-bottom: 1px dotted #ddd;
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	text-align: left;
 	padding: .5em 1rem;
@@ -130,8 +129,12 @@ h2{
 	background: #ffe324;
 	color: #222;
 }
-.item.item-header{
+.item-header{
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
 	font-size: .75rem;
+	padding: 1em 1rem;
 	position: -webkit-sticky;
   position: sticky;
 	top: .8rem;
@@ -144,6 +147,31 @@ h2{
 }
 .item-header:hover{
 	background: #fff;
+}
+.item-header div{
+	line-height: .875rem;
+	vertical-align: top;
+	display: flex;
+	align-items: center;
+}
+.item-header > div > div{
+	padding: .1rem 0 0;
+}
+.item-header .word{
+	display: flex;
+	font-size: .75rem;
+	font-weight: 400;
+}
+.item-header svg{
+	width: .875rem;
+	height: .875rem;
+	fill: none;
+	stroke: #666;
+	stroke-miterlimit: 2px;
+	stroke-width: 4.5px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	margin: 0 .5em 0 0;
 }
 .category-label{
 	/* border-bottom: 1px dotted #f5f5f5; */
@@ -164,10 +192,6 @@ h2{
 	flex-basis: 15%;
 	font-weight: 700;
 	font-size: 1rem;
-}
-.item-header .word{
-	font-size: .75rem;
-	font-weight: 400;
 }
 .word span{
 	position: relative;
@@ -216,7 +240,7 @@ h2{
 	padding: 0 .5em;
 	cursor: pointer;
 }
-.correct svg{
+.audio-icon{
 	width: 1rem;
 	height: 1rem;
 	fill: none;
@@ -227,7 +251,7 @@ h2{
 	stroke-linecap: round;
 	transition: all .5s cubic-bezier(.5,0,.5,.5) 0s;
 }
-.playing .correct svg{
+.playing .audio-icon{
 	stroke: #333;
 }
 .playing .ani-path{
@@ -242,7 +266,7 @@ h2{
 	60%{opacity: 1;}
 	100%{opacity: 0;}
 }
-.item:hover .correct svg{
+.item:hover .audio-icon{
 	stroke: #333;
 }
 .wrong{
