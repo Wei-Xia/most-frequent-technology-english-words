@@ -2,7 +2,7 @@
 word: resolution
 meaning: 分辨率
 correct: / ˌrɛzəˈluʃən /
-wrong: 
+wrong:
 note:
-category: 尺寸
+category: 尺寸相关
 ---
