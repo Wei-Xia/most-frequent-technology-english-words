@@ -3,12 +3,7 @@ layout: default
 title: Anyway.ABC
 ---
 
-<div class="tagline">
-  Anyway.ABC 是一个旨在帮助中国设计师纠正常见英文术语发音的网站
-</div>
-
 <div class="word-table">
-
   <div class="item-header">
     <div class="word">
       <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -18,6 +13,7 @@ title: Anyway.ABC
       </svg>
       <div>单词</div>
     </div>
+
     <div class="meaning">
       <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M11 44l-8 8 8 8m42-40l8-8-8-8"></path>
@@ -25,6 +21,7 @@ title: Anyway.ABC
       </svg>
       <div>翻译</div>
     </div>
+
     <div class="correct">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M15.74 30l12 14 34-42"></path>
@@ -32,6 +29,7 @@ title: Anyway.ABC
       </svg>
       <div>正确发音</div>
     </div>
+
     <div class="wrong">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink">
         <circle cx="32.001" cy="32" r="30"></circle>
@@ -39,6 +37,7 @@ title: Anyway.ABC
       </svg>
       <div>常见错误发音</div>
     </div>
+
     <div class="note">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M24 51.9a8 8 0 0 1 8 8v-44a8 8 0 0 0-8-8H2v44zm8-36a8 8 0 0 1 8-8h22v44H40a8 8 0 0 0-8 8"></path>
@@ -46,29 +45,29 @@ title: Anyway.ABC
       </svg>
       <div>备注</div>
     </div>
+
   </div>
 
-{% for category in site.categories %}
-  {% capture category_name %}{{ category | first }}{% endcapture %}
-  <div class="category-label">{{ category }}123</div>
-  {% for post in site.categories[category_name ] %}
-  <div class="item" :class=" nowPlaying == true & currentWord == '{{ post.word }}' ? 'playing' : '' ">
-    <div class="word"><span>{{ post.word }}</span></div>
-    <div class="meaning">{{ post.meaning }}</div>
-    <div class="correct">{{ post.correct }}
-      <a v-on:click="playNow('{{ post.title  |  downcase }}')">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"  xmlns:xlink="http://www.w3.org/1999/xlink" class="audio-icon">
-          <path d="M44.2 21.8a12 12 0 0 1 0 20.5" class="ani-path"></path>
-          <path d="M50 16a20 20 0 0 1 0 32" class="ani-path-2"></path>
-          <path d="M38 6L20 24H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12l18 18z"></path>
-        </svg>
-      </a>
-    </div>
-    <div class="wrong">{{ post.wrong }}</div>
-    <div class="note"><span>{{ post.note }}<span></div>
-    </div>
+  {% for category in site.categories %}
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div class="category-label">{{ category }}123</div>
+    {% for post in site.categories[category_name ] %}
+    <div class="item" :class=" nowPlaying == true & currentWord == '{{ post.word }}' ? 'playing' : '' ">
+      <div class="word"><span>{{ post.word }}</span></div>
+      <div class="meaning">{{ post.meaning }}</div>
+      <div class="correct">{{ post.correct }}
+        <a v-on:click="playNow('{{ post.title  |  downcase }}')">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"  xmlns:xlink="http://www.w3.org/1999/xlink" class="audio-icon">
+            <path d="M44.2 21.8a12 12 0 0 1 0 20.5" class="ani-path"></path>
+            <path d="M50 16a20 20 0 0 1 0 32" class="ani-path-2"></path>
+            <path d="M38 6L20 24H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12l18 18z"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="wrong">{{ post.wrong }}</div>
+      <div class="note"><span>{{ post.note }}<span></div>
+      </div>
+    {% endfor %}
   {% endfor %}
-{% endfor %}
 
-
-  </div>
+</div>
