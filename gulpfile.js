@@ -1,21 +1,26 @@
 var gulp = require('gulp'),
-    gulpLoadPlugins = require('gulp-load-plugins'),
-    plugins = gulpLoadPlugins();
+  gulpLoadPlugins = require('gulp-load-plugins'),
+  plugins = gulpLoadPlugins();
 
 var cdnUrl = [
-	[ '../assets/', 'https://anyway-web.b0.upaiyun.com/anywayfm.com/' ]
+	[ 'assets/vue.js', 'https://anw.red/js/vue.min.js' ],
+	[ 'assets/', 'https://anw.red/anyway.abc/' ]
 ];
 
-gulp.task('watch', function() {
-	gulp.watch(['*','*/*'], ['default']);
- });
- 
 gulp.task('default', function() {
-	gulp.src(['assets/*.css','!assets/*.min.css'])
-		.pipe(plugins.cleanCss({compatibility: 'ie8'}))
+
+	gulp.src('_layouts/dev.html')
+		.pipe(plugins.cacheBust({
+      type: 'MD5',
+      basePath: './'
+    	}))
 		.pipe(plugins.batchReplace(cdnUrl))
-		.pipe(plugins.rename({
-		      suffix: '.min'
-		    }))
-		.pipe(gulp.dest('builds/'));
+    .pipe(plugins.htmlmin({collapseWhitespace: true}))
+    .pipe(plugins.rename("default.html"))
+		.pipe(gulp.dest('_layouts'));
+
+	gulp.src('assets/*.css')
+  	.pipe(plugins.cleanCss({compatibility: 'ie8'}))
+    .pipe(plugins.batchReplace(cdnUrl))
+    .pipe(gulp.dest('builds'));
 });

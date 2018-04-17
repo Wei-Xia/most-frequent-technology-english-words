@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ page.title }}</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="author" content="JJ Ying" />
+	<meta name="description" content="设计师经常念错的单词"/>
+
+	<link rel="stylesheet" href="assets/styles.css">
+	<link rel="icon" href="https://anw.red/anyway.fm/favicon-16.png" sizes="16x16">
+	<link rel="icon" href="https://anw.red/anyway.fm/favicon-32.png" sizes="32x32">
+	<link rel="icon" href="https://anw.red/anyway.fm/favicon-96.png" sizes="96x96">
+
+</head>
+
+<body>
+
+	<main id="abc">
+		<h1>Anyway.ABC</h1>
+		<div class="tagline">
+			来自 Anyway.FM 的界面设计行业专业英文术语聚合站，配合第 62 期节目服用效果更佳。什么？你问我为啥下面标的都是美音的音标？我……乐……意……对于内容其他方面的反馈和纠错可直接邮件我们
+		</div>
+		{{ content }}
+		<audio :src="'https://anw.red/anyway.abc/audio/'+currentWord+'.mp3'" id="voice-file" loop preload="none">
+	</main>
+
+	<div class="mask mt"></div>
+	<div class="mask mb"></div>
+	<div class="mask mv ml"></div>
+	<div class="mask mv mr"></div>
+	<div class="mask mv ml2"></div>
+	<div class="mask mv mr2"></div>
+
+	<script src="assets/vue.js"></script>
+	<script src="assets/main.js"></script>
+
+	<!-- ~Baidu Analytics -->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?d6fc362c05908e5ce8d17df52dbc2586";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+
+	<!-- ~Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94081953-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-94081953-2');
+	</script>
+
+</body>
+</html>

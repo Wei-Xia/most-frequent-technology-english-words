@@ -1,9 +1,12 @@
 {
-    "dependencies": {
+  "dependencies": {
+    "gulp": "*",
     "gulp-clean-css": "*",
-    "gulp-load-plugins": "*",
     "gulp-rename": "*",
     "gulp-watch": "*",
+    "gulp-cache-bust": "*",
+    "gulp-svgo": "*",
+    "gulp-load-plugins": "*",
     "gulp-batch-replace": "*",
     "gulp-htmlmin": "*"
   }
