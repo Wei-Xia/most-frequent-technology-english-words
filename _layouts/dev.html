@@ -18,13 +18,24 @@
 <body>
 
 	<main id="abc">
-		<h1>Anyway.ABC</h1>
-		<div class="tagline">
-			来自 Anyway.FM 的界面设计行业专业英文术语聚合站，配合第 62 期节目服用效果更佳。什么？你问我为啥下面标的都是美音的音标？我……乐……意……对于内容其他方面的反馈和纠错可直接邮件我们
-		</div>
+		<header>
+			<h1>Anyway.ABC<sup>BETA</sup></h1>
+			<div class="tagline">
+				来自 <a href="https://Anyway.FM/">Anyway.FM</a> 的界面设计行业专业英文术语聚合站，配合<a href="https://Anyway.FM/">第 62 期节目</a>服用效果更佳。什么？你问我为啥下面标的都是美音的音标？我……乐……意…… 对于内容其他方面的反馈和纠错可直接<a href="mailto:hello@anyway.fm">邮件我们</a>。
+			</div>
+		</header>
 		{{ content }}
 		<audio :src="'https://anw.red/anyway.abc/audio/'+currentWord+'.mp3'" id="voice-file" loop preload="none">
 	</main>
+
+	<div class="the-end">
+		<p>◼</p>
+		To be Continued...
+	</div>
+
+	<footer >
+		<div class="inner">© 2018 <a href="https://anyway.fm">Anyway.FM</a> 保留所有权利</a></div>
+	</footer>
 
 	<div class="mask mt"></div>
 	<div class="mask mb"></div>

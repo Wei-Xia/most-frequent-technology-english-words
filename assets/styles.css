@@ -31,19 +31,28 @@ ol, ul{
 /*~Fonts*/
 @font-face {
 	font-family: 'Anyway Type';
-	src: url('https://anyway-web.b0.upaiyun.com/font/calluna-sans-regular.woff2') format('woff2'),
-		url('https://anyway-web.b0.upaiyun.com/font/calluna-sans-regular.woff') format('woff');
+	src: url('https://anw.red/font/calluna-sans-regular.woff2') format('woff2'),
+		url('https://anw.red/font/calluna-sans-regular.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 	font-display: fallback;
 }
 @font-face {
 	font-family: 'Anyway Type';
-	src: url('https://anyway-web.b0.upaiyun.com/font/calluna-sans-bold.woff2') format('woff2'),
-	url('https://anyway-web.b0.upaiyun.com/font/calluna-sans-bold.woff') format('woff');
+	src: url('https://anw.red/font/calluna-sans-bold.woff2') format('woff2'),
+		url('https://anw.red/font/calluna-sans-bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 	font-display: fallback;
+}
+@font-face {
+  font-family: 'Anyway Serif';
+	src: url('https://anw.red/font/calluna-bold.woff') format('woff'),
+		url('https://anw.red/font/calluna-bold.woff2') format('woff2'),
+		url('https://anw.red/font/calluna-bold.eot') format('eot');
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
 }
 .mask{
 	position: fixed;
@@ -69,12 +78,28 @@ ol, ul{
 .ml,.ml2{left: 0;}
 .mr,.mr2{right: 0;}
 .ml2,.mr2{bottom: none;top: 0;}
-
+/* ~The End */
+.the-end{
+	font-size: 2rem;
+	margin: 0 0 3rem;
+	font-weight: 700;
+}
+.the-end p{
+	color: #ffe324;
+}
 /*~Footer*/
 footer{
-	padding: 2em 0;
-	color: #fff;
-	display: block;
+	font-size: 1rem;
+	clear: both;
+	text-align: center;
+	background: #ffe324;
+	color: #222;
+}
+footer .inner{
+	padding: 1rem;
+}
+footer a{
+	color: #222;
 }
 
 /*~Main*/
@@ -92,25 +117,51 @@ main{
 	0% {opacity: 0;}
 	100% {opacity: 1;}
 }
+/* ~Header */
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3rem 0 4.5rem;
+}
 h1{
 	font-size: 4rem;
 	color: #333;
 	font-weight: 700;
 	font-feature-settings: 'tnum';
 	font-family: 'Calluna';
+	display: block;
+}
+h1 sup {
+	font-size: .15em;
+	line-height: 1.2;
+	margin: 0;
+	border: none;
+	display: block;
+	background: #444;
+	color: #fff;
+	padding: .22em .3em .1em;
+	font-family: "Anyway Type", "PingFang SC", "Microsoft YaHei", sans-serif;
+	font-weight: 400;
+	position: relative;
+	display: inline-block;
+	right:0em;
+	top: -5em;
+	text-shadow: none;
 }
 .tagline{
 	font-size: 1rem;
 	font-weight: 400;
 	max-width: 80ch;
 	text-align: left;
-	margin: .5em auto 3em;
-	border: 3px solid #ffe324;
-	border-left: none;
-	border-right: none;
-	padding: 1em 2em;
+	border-left: 6px solid #ffe324;
+	/* background: #ffe324; */
+	padding: 0 0 .2em 2rem;
 }
-
+.tagline a{
+	color: #555;
+	font-weight: 700;
+}
 /* ~Word List */
 .item{
 	border-bottom: 1px dotted #ddd;
