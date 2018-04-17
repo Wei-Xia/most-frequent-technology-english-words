@@ -3,29 +3,34 @@ layout: default
 title: Anyway.ABC
 ---
 
- <div class="tagline">
-   Anyway.ABC 是一个旨在帮助中国设计师纠正常见英文术语发音的网站
+<div class="tagline">
+ Anyway.ABC 是一个旨在帮助中国设计师纠正常见英文术语发音的网站
+</div>
+
+<div class="word-table">
+ <div class="item item-header">
+   <div class="word">⌘ 单词</div>
+   <div class="meaning">⇢ 翻译</div>
+   <div class="correct">✔︎ 正确发音</div>
+   <div class="wrong">✘ 常见错误发音</div>
+   <div class="note">✎ 备注</div>
  </div>
 
- <div class="word-table">
-   <div class="item item-header">
-     <div class="word">⌘ 单词</div>
-     <div class="meaning">⇢ 翻译</div>
-     <div class="correct">✓ 正确发音</div>
-     <div class="wrong">✗ 常见错误发音</div>
-     <div class="note">✎ 备注</div>
-   </div>
+ {% for category in site.categories | sort %}
+   {% capture category_name %}{{ category | first }}{% endcapture %}
+   <div class="category-label">{{ category }}</div>
+   {% for post in site.categories[category_name ] %}
+    <div class="item">
+      <div class="word"><span>{{ post.word }}</span></div>
+      <div class="meaning">{{ post.meaning }}</div>
+      <div class="correct">{{ post.correct }}
+        <a v-on:click="playNow('{{ post.title  |  downcase }}')">🔈</a>
+      </div>
+      <div class="wrong">{{ post.wrong }}</div>
+      <div class="note">{{ post.note }}</div>
+    </div>
+    {% endfor %}
+ {% endfor %}
 
-   {% for post in site.posts %}
-   <div class="item">
-     <div class="word">{{ post.word }}</div>
-     <div class="meaning">{{ post.meaning }}</div>
-     <div class="correct">/ {{ post.correct }} /
-       <a v-on:click="playNow('{{ post.title  |  downcase }}')">🔈</a>
-     </div>
-     <div class="wrong">{{ post.wrong }}</div>
-     <div class="note">{{ post.note }}</div>
-   </div>
-   {% endfor %}
 
- </div>
+</div>
