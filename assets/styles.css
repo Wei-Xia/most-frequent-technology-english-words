@@ -15,6 +15,9 @@ body{
 	color: #555;
 	text-align: center;
 	background: #fff;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 a{
 	text-decoration: none;
@@ -22,7 +25,7 @@ a{
 }
 ::selection{
 	background: #ffe324;
-	color: #fff;
+	color: #000;
 	text-shadow: none;
 }
 ol, ul{
@@ -131,6 +134,9 @@ h1{
 	font-feature-settings: 'tnum';
 	font-family: 'Calluna';
 	display: block;
+	text-align: left;
+	margin: 0 1em 0 0;
+	position: relative;
 }
 h1 sup {
 	font-size: .15em;
@@ -143,10 +149,10 @@ h1 sup {
 	padding: .22em .3em .1em;
 	font-family: "Anyway Type", "PingFang SC", "Microsoft YaHei", sans-serif;
 	font-weight: 400;
-	position: relative;
+	position: absolute;
 	display: inline-block;
-	right:0em;
-	top: -5em;
+	right: -3em;
+	top: .2em;
 	text-shadow: none;
 }
 .tagline{
@@ -337,15 +343,34 @@ h1 sup {
 	color: #333;
 }
 
+@media screen and (max-width: 1200px) {
+	h1{
+		font-size: 2.5rem;
+	}
+}
 @media screen and (max-width: 1000px) {
 	main{
-		padding: 4em 2%;
+		padding: 4em .38rem;
 	}
 	* * .mobile-hide{
 		display: none;
 	}
+	.mask{
+		border-width: .2rem;
+	}
+	header{
+		flex-direction: column;
+		margin: 2rem 0 3.5rem;
+	}
 	h1{
-		font-size: 2.5rem;
+		font-size: 2.8rem;
+		margin: 0;
+	}
+	.tagline{
+		padding: 1em 0 0;
+		border-left: none;
+		border-top: 6px solid #ffe324;
+		width: 85%;
 	}
 	.item,
 	.item-header{
