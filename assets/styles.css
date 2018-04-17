@@ -69,14 +69,12 @@ ol, ul{
 .mr,.mr2{right: 0;}
 .ml2,.mr2{bottom: none;top: 0;}
 
-
 /*~Footer*/
 footer{
 	padding: 2em 0;
 	color: #fff;
 	display: block;
 }
-
 
 /*~Main*/
 main{
@@ -87,7 +85,7 @@ main{
 	font-size: 1rem;
 	max-width: 80em;
 	margin: 0 auto;
-	animation: slowShow .3s cubic-bezier(1,0,.5,.5) 0s;
+	/* animation: slowShow .3s cubic-bezier(1,0,.5,.5) 0s; */
 }
 @keyframes slowShow {
 	0% {opacity: 0;}
@@ -121,6 +119,7 @@ h2{
 	text-align: left;
 	padding: .5em 1rem;
 	transition: all .25s cubic-bezier(.5,0,.5,.5) 0s;
+	font-size: .875rem;
 }
 .item:nth-child(2n){
 	background: #fcfcfc;
@@ -143,9 +142,48 @@ h2{
 .item-header:hover{
 	background: #fff;
 }
+.category-label{
+	border-bottom: 1px dotted #f5f5f5;
+	text-align: left;
+	font-weight: 400;
+	font-size: .75rem;
+	background: #f5f5f5;
+	color: #aaa;
+	padding: .2em 1rem;
+}
 .word{
 	flex-basis: 15%;
 	font-weight: 700;
+	font-size: 1rem;
+}
+.word span{
+	position: relative;
+	z-index: 1;
+	text-shadow: 1px 0 0 #fff,
+	-1px 0 0 #fff,
+	1px 0 0 #fff;
+	transition: all .25s cubic-bezier(.5,0,.5,.5) 0s;
+}
+.item:hover .word span{
+	text-shadow: 1px 0 0 #ffe324,
+	-1px 0 0 #ffe324,
+	1px 0 0 #ffe324;
+}
+.word span:after{
+	background: #ffe324;
+	position: absolute;
+	width: 100%;
+	height: .2em;
+	content: "";
+	bottom: 0;
+	left: 0;
+	z-index: -9;
+	transition: all .25s cubic-bezier(.5,0,.5,.5) 0s;
+}
+.item:hover .word span:after{
+	/* background: #fff; */
+	width: 0;
+	transition-duration: .1s;
 }
 .meaning{
 	flex-basis: 25%;
