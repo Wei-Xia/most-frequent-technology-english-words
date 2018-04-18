@@ -19,13 +19,22 @@
 
 <body>
 
-	<main id="abc">
-		<header>
+	<header>
+		<div class="inner">
 			<h1>Anyway.ABC<sup>BETA</sup></h1>
 			<div class="tagline">
-				来自 <a href="https://Anyway.FM/">Anyway.FM</a> 的界面设计行业英文术语聚合站，配合本台<a href="https://Anyway.FM/">第 62 期节目</a>服用效果更佳。什么？你问我为啥下面标的都是美音的音标「我……乐……意……」对于内容其他方面的反馈和纠错可直接<a href="mailto:hello@anyway.fm">邮件我们</a>。
+				<ol>
+					<li><span>01</span>来自 <a href="https://Anyway.FM/">Anyway.FM</a> 的 UI 行业英文术语聚合站</li>
+					<li><span>02</span>配合本台<a href="https://Anyway.FM/">第 62 期节目</a>服用效果更佳</li>
+					<li><span>03</span>为啥下面标的都是美音？「我……乐……意……」</li>
+					<li><span>04</span>其他方面的反馈和纠错可直接<a href="mailto:hello@anyway.fm">邮件我们</a></li>
+				</ol>
 			</div>
-		</header>
+		</div>
+	</header>
+
+	<main id="abc">
+
 		{{ content }}
 		<audio :src="'https://anw.red/anyway.abc/audio/'+currentWord+'.mp3'" id="voice-file" loop preload="none">
 	</main>
