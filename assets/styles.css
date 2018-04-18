@@ -108,7 +108,10 @@ ol, ul{
 	font-weight: 700;
 }
 .the-end p{
-	color: #ffe324;
+	width: 1.6rem;
+	margin: 0 auto .75rem;
+	height: 1.6rem;
+	background: #ffe324;
 	animation: square-rotate 10s ease-in-out infinite;
 }
 @keyframes square-rotate {
@@ -221,6 +224,10 @@ h1 sup {
 	color: #666;
 	font-weight: 700;
 }
+.tagline a:hover{
+	background: #ffe324;
+	color: #333;
+}
 /* ~Word List */
 .item{
 	border-bottom: 1px dotted #ddd;
@@ -290,7 +297,7 @@ h1 sup {
 	text-align: left;
 	font-weight: 400;
 	font-size: .75rem;
-	background: #f5f5f5;
+	background: #f7f7f7;
 	color: #999;
 	padding: .2em 1rem;
 	display: flex;
@@ -409,7 +416,7 @@ h1 sup {
 }
 @media screen and (max-width: 900px) {
 	main{
-		padding: 4em .08rem 4em .38rem;
+		padding: .2rem .08rem 4em .38rem;
 	}
 	.mobile-hide{
 		display: none;
@@ -418,7 +425,7 @@ h1 sup {
 		border-width: .2rem;
 	}
 	header{
-		padding: 5rem 1rem 5rem;
+		padding: 5rem 1rem 4rem;
 	}
 	header .inner{
 		flex-direction: column;
@@ -428,9 +435,7 @@ h1 sup {
 		margin: 0;
 	}
 	.tagline{
-		padding: 1em 0 0;
-		border-left: none;
-		width: 85%;
+		padding: 1.5em 0 0;
 	}
 	.item,
 	.item-header{
@@ -462,5 +467,11 @@ h1 sup {
 	}
 	.note{
 		flex-basis: 100%;
+	}
+	.mt, .mb{
+		height: 20.4rem;
+	}
+	.mv{
+		width: 20.4rem;
 	}
 }
