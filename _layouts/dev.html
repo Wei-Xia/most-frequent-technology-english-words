@@ -71,12 +71,17 @@
 				playNow: function (word) {
 					if ( word == a.currentWord) {
 						audio.pause()
-						a.nowPlaying = false;
+						a.nowPlaying = !a.nowPlaying;
+							if (a.nowPlaying == true) {
+								var newAudio = setTimeout("audio.play()",50)
+							}
+						console.log(a.nowPlaying);
 					}
 					else {
 						a.nowPlaying = true
 						a.currentWord = word
 						var newAudio = setTimeout("audio.play()",50)
+						console.log(a.nowPlaying);
 					}
 
 				}

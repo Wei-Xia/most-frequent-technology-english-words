@@ -53,7 +53,7 @@ title: Anyway.ABC
     {% assign number = forloop.index %}
     <div class="category-label"><span><strong>0{{ number }}.</strong> {{ category_name }}</span></div>
     {% for post in site.categories[category_name ] %}
-    <div class="item" :class=" nowPlaying == true & currentWord == '{{ post.word  | downcase }}' ? 'playing' : '' ">
+    <div class="item" :class=" nowPlaying == true & currentWord == '{{ post.title  | downcase }}' ? 'playing' : '' ">
       <div class="word"><span>{{ post.word }}</span></div>
       <div class="meaning">{{ post.meaning }}</div>
       <div class="correct">{{ post.correct }}
