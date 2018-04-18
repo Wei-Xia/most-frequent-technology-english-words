@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-cmn-Hans"><head><meta charset="UTF-8"><title>{{ page.title }}</title><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="author" content="JJ Ying"><meta name="description" content="设计师经常念错的单词"><link rel="stylesheet" href="https://anw.red/anyway.abc/styles.css?v=a3d8d9e7d7b38632a20da70d38e77ff3"><link rel="icon" href="https://anw.red/anyway.abc/favicon-16.png" sizes="16x16"><link rel="icon" href="https://anw.red/anyway.abc/favicon-32.png" sizes="32x32"><link rel="icon" href="https://anw.red/anyway.abc/favicon-96.png" sizes="96x96"><link rel="mask-icon" href="https://anw.red/anyway.fm/mask-icon.svg" color="#ffe324"></head><body><header><div class="inner"><h1>Anyway.ABC<sup>BETA</sup></h1><div class="tagline"><ol><li><span>01</span>来自 <a href="https://Anyway.FM/">Anyway.FM</a> 的 UI 行业英文术语聚合站</li><li><span>02</span>配合本台<a href="https://Anyway.FM/">第 62 期节目</a>服用效果更佳</li><li><span>03</span>为啥下面标的都是美音？「我……乐……意……」</li><li><span>04</span>其他方面的反馈和纠错可直接<a href="mailto:hello@anyway.fm">邮件我们</a></li></ol></div></div></header><main id="abc">{{ content }}<audio :src="'https://anw.red/anyway.abc/audio/'+currentWord+'.mp3'" id="voice-file" loop preload="none"></audio></main><div class="the-end"><p></p>To be Continued...</div><footer><div class="inner">© 2018 <a href="https://anyway.fm">Anyway.FM</a> 保留所有权利</div></footer><div class="mask mt"></div><div class="mask mb"></div><div class="mask mv ml"></div><div class="mask mv mr"></div><div class="mask mv ml2"></div><div class="mask mv mr2"></div><div class="x-corner x-corner-l"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M0 49.9L50 49.9C32.6 49.9 26.3 48.1 20 44.7 13.6 41.3 8.6 36.3 5.2 29.9 1.8 23.6 0 17.3 0-0.1L0 49.9Z" fill="#ffe324"/></svg></div><div class="x-corner x-corner-r"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M0 49.9L50 49.9C32.6 49.9 26.3 48.1 20 44.7 13.6 41.3 8.6 36.3 5.2 29.9 1.8 23.6 0 17.3 0-0.1L0 49.9Z" fill="#ffe324"/></svg></div><script src="https://anw.red/js/vue.min.js?v=fa399a1766728d176bbcd931d9b680ff"></script><script>var a = new Vue({
+<!DOCTYPE html><html lang="zh-cmn-Hans"><head><meta charset="UTF-8"><title>{{ page.title }}</title><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="author" content="JJ Ying"><meta name="description" content="设计师经常念错的单词"><link rel="stylesheet" href="https://anw.red/anyway.abc/styles.css?v=f5b2d51976e1226c143236e353dbefd7"><link rel="icon" href="https://anw.red/anyway.abc/favicon-16.png" sizes="16x16"><link rel="icon" href="https://anw.red/anyway.abc/favicon-32.png" sizes="32x32"><link rel="icon" href="https://anw.red/anyway.abc/favicon-96.png" sizes="96x96"><link rel="mask-icon" href="https://anw.red/anyway.fm/mask-icon.svg" color="#ffe324"></head><body><header><div class="inner"><h1>Anyway.ABC<sup>BETA</sup></h1><div class="tagline"><ol><li><span>01</span>来自 <a href="https://Anyway.FM/">Anyway.FM</a> 的 UI 行业英文术语聚合站</li><li><span>02</span>配合本台<a href="https://Anyway.FM/">第 62 期节目</a>服用效果更佳</li><li><span>03</span>为啥下面标的都是美音？「我……乐……意……」</li><li><span>04</span>其他方面的反馈和纠错可直接<a href="mailto:hello@anyway.fm">邮件我们</a></li></ol></div></div></header><main id="abc">{{ content }}<audio :src="'https://anw.red/anyway.abc/audio/'+currentWord+'.mp3'" id="voice-file" loop preload="none"></audio></main><div class="the-end"><p></p>To be Continued...</div><footer><div class="inner">© 2018 <a href="https://anyway.fm">Anyway.FM</a> 保留所有权利</div></footer><div class="mask mt"></div><div class="mask mb"></div><div class="mask mv ml"></div><div class="mask mv mr"></div><div class="mask mv ml2"></div><div class="mask mv mr2"></div><div class="x-corner x-corner-l"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M0 49.9L50 49.9C32.6 49.9 26.3 48.1 20 44.7 13.6 41.3 8.6 36.3 5.2 29.9 1.8 23.6 0 17.3 0-0.1L0 49.9Z" fill="#ffe324"/></svg></div><div class="x-corner x-corner-r"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M0 49.9L50 49.9C32.6 49.9 26.3 48.1 20 44.7 13.6 41.3 8.6 36.3 5.2 29.9 1.8 23.6 0 17.3 0-0.1L0 49.9Z" fill="#ffe324"/></svg></div><script src="https://anw.red/js/vue.min.js?v=fa399a1766728d176bbcd931d9b680ff"></script><script>var a = new Vue({
 			el: '#abc',
 			data: {
 				nowPlaying: false,
@@ -8,12 +8,17 @@
 				playNow: function (word) {
 					if ( word == a.currentWord) {
 						audio.pause()
-						a.nowPlaying = false;
+						a.nowPlaying = !a.nowPlaying;
+							if (a.nowPlaying == true) {
+								var newAudio = setTimeout("audio.play()",50)
+							}
+						console.log(a.nowPlaying);
 					}
 					else {
 						a.nowPlaying = true
 						a.currentWord = word
 						var newAudio = setTimeout("audio.play()",50)
+						console.log(a.nowPlaying);
 					}
 
 				}
