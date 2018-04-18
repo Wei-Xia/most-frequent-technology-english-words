@@ -8,7 +8,7 @@
 	-webkit-tap-highlight-color: transparent;
 }
 html{
-	background: #ffe324;
+	background: #fff;
 }
 body{
 	font-family: 'Anyway Type', 'Myriad Pro', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
@@ -67,7 +67,7 @@ ol, ul{
 	z-index: 999;
 	border: .4rem solid #ffe324;
 	background: #ffe324;
-	will-change: transform;
+	pointer-events: none;
 }
 .mt, .mb{
 	height: 0;
@@ -75,17 +75,31 @@ ol, ul{
 	left: 0;
 }
 .mb{
-	bottom: 0;
+	bottom: -20rem;
+	height: 20.8rem;
 }
-.mt{top: 0;}
+.mb2{
+	bottom: .8rem;
+	height: 2rem;
+	width: 200px;
+	border: none;
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+}
+.mt{
+	top: -20rem;
+	height: 20.8rem;
+}
 .mv{
 	bottom: 0;
 	height: 999em;
 	width: 0;
 }
-.ml,.ml2{left: 0;}
-.mr,.mr2{right: 0;}
-.ml2,.mr2{bottom: none;top: 0;}
+.ml, .ml2{left: -20rem;width: 20.8rem;}
+.mr, .mr2{right: -20rem;width: 20.8rem;}
+.ml2, .mr2{bottom: none;top: 0;}
+.x-corner {
+	display: none;
+}
 
 /* ~The End */
 .the-end{
@@ -167,7 +181,7 @@ h1 sup {
 	position: absolute;
 	display: inline-block;
 	right: -3em;
-	top: .2em;
+	top: 1em;
 	text-shadow: none;
 }
 .tagline{
@@ -329,10 +343,10 @@ h1 sup {
 	stroke: #333;
 }
 .playing .ani-path{
-	animation: audio-icon .6s ease-in-out .45s infinite;
+	animation: audio-icon .6s ease-out .45s infinite;
 }
 .playing .ani-path-2{
-	animation: audio-icon .6s ease-in-out .1s infinite;
+	animation: audio-icon .6s ease-in .1s infinite;
 }
 @keyframes audio-icon {
 	0%{opacity: 0;}
@@ -366,7 +380,7 @@ h1 sup {
 		font-size: 2.5rem;
 	}
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 	main{
 		padding: 4em .08rem 4em .38rem;
 	}
@@ -420,5 +434,34 @@ h1 sup {
 	}
 	.note{
 		flex-basis: 100%;
+	}
+}
+
+@media only screen and (device-width : 375px) and (device-height : 812px)  and (-webkit-device-pixel-ratio : 3) {
+	.mask {
+		border-width: 4px;
+	}
+	.x-corner {
+		display: block;
+		position: fixed;
+		bottom: 7.6px;
+		width: 41px;
+		height: 41px;
+		opacity: 0;
+	}
+	.x-corner.show {
+		opacity: 1;
+	}
+
+	.x-corner svg {
+		max-height: 41px;
+		max-width: 41px;
+	}
+	.x-corner-l {
+		left: 8px;
+	}
+	.x-corner-r {
+		right: 8px;
+		transform: scaleX(-1);
 	}
 }
