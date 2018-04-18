@@ -385,6 +385,9 @@ h1 sup {
 	60%{opacity: 1;}
 	100%{opacity: 0;}
 }
+.playing .ani-path-3{
+	fill: #333;
+}
 .item:hover .audio-icon{
 	stroke: #333;
 }
