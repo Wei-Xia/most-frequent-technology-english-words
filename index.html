@@ -65,7 +65,14 @@ title: Anyway.ABC 安妮薇术语小词典
           </svg>
         </a>
       </div>
-      <div class="wrong">{{ post.wrong }}</div>
+      <div class="wrong">
+        {% if post.wrong == null %}
+          -
+        {% else %}
+          {{ post.wrong }}
+        {% endif %}
+
+      </div>
       <div class="note"><span>{{ post.note }}<span></div>
       </div>
     {% endfor %}
