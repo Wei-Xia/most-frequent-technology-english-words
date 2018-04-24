@@ -14,7 +14,7 @@ body{
 	font-family: 'Anyway Type', 'Myriad Pro', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
 	color: #555;
 	text-align: center;
-	background: #fff;
+	background: #f5f5f5;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -124,14 +124,14 @@ ol, ul{
 }
 /*~Footer*/
 footer{
-	font-size: 1rem;
+	font-size: .75rem;
 	clear: both;
 	text-align: center;
-	background: #ffe324;
+	background: #fff;
 	color: #222;
 }
 footer .inner{
-	padding: 1rem;
+	padding: 1rem 0 1.8rem;
 }
 footer a{
 	color: #222;
@@ -141,11 +141,12 @@ footer a{
 main{
 	min-height: 100vh;
 	display: block;
-	padding:  .5em 5% 4em;
+	padding:  0 .8rem 4em;
 	line-height: 1.65;
 	font-size: 1rem;
 	max-width: 80rem;
 	margin: 0 auto;
+	background: #f5f5f5;
 	/* animation: slowShow .3s cubic-bezier(1,0,.5,.5) 0s; */
 }
 @keyframes slowShow {
@@ -237,9 +238,10 @@ h1 sup {
 	padding: .5em 1rem;
 	transition: all .25s cubic-bezier(.5,0,.5,.5) 0s;
 	font-size: .875rem;
+	background: #fff;
 }
 .item:nth-child(2n){
-	background: #fcfcfc;
+	background: #fbfbfb;
 }
 .item:hover{
 	background: #ffe324;
@@ -293,16 +295,14 @@ h1 sup {
  stroke: #bbb;
 } */
 .category-label{
-	/* border-bottom: 1px dotted #f5f5f5; */
 	text-align: left;
 	font-weight: 400;
 	font-size: .75rem;
-	background: #f7f7f7;
 	color: #999;
 	padding: .2em 1rem;
 	display: flex;
 	align-items: center;
-	margin: 4em 0 0;
+	margin: 2.5em 0 0;
 }
 .category-label:nth-child(2){
 	margin: 0;
@@ -408,13 +408,61 @@ h1 sup {
 	text-decoration-style: dotted;
 	color: #333;
 }
-
+/* ~Ref */
+.ref{
+	max-width: 80em;
+	margin: 0 auto 0;
+	padding: 3rem 1rem 0;
+}
+h2{
+	text-align: left;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+}
+.ref h2 svg{
+	width: 1rem;
+	height: 1rem;
+	margin: 0 .3rem 0 0
+}
+.ref ol{
+	column-count: 3;
+	column-gap: 2rem;
+	text-align: left;
+	list-style: none;
+	margin: .2rem 0;
+	line-height: 2;
+	font-size: .875rem;
+}
+.ref ol span{
+	font-weight: 400;
+	background: #ffe324;
+	padding: .1em .25em .15em;
+	color: #333;
+	margin: 0 .4em 0 0;
+	font-weight: 400;
+	line-height: 2;
+	-moz-font-feature-settings: 'tnum';
+	-webkit-font-feature-settings: 'tnum';
+	font-feature-settings: 'tnum';
+}
+.ref a{
+	font-weight: 400;
+	color: #333;
+	padding: .1em .15em .15em 0;
+}
+.ref a:hover{
+	background: #ffe324;
+}
 @media screen and (max-width: 1200px) {
 	h1{
 		font-size: 3rem;
 	}
 	.tagline{
 		font-size: .75rem;
+	}
+	.ref ol{
+		column-count: 2;
 	}
 }
 @media screen and (max-width: 900px) {
@@ -470,6 +518,10 @@ h1 sup {
 	}
 	.note{
 		flex-basis: 100%;
+	}
+	.ref ol{
+		column-count: 1;
+		font-size: 1rem;
 	}
 	.mt, .mb{
 		height: 20.4rem;
