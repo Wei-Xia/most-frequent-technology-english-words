@@ -16,7 +16,7 @@ gulp.task('default', function() {
     	}))
 		.pipe(plugins.batchReplace(cdnUrl))
     .pipe(plugins.htmlmin({collapseWhitespace: true}))
-    .pipe(plugins.rename("default.html"))
+    .pipe(plugins.rename("production.html"))
 		.pipe(gulp.dest('_layouts'));
 
 	gulp.src('assets/*.css')

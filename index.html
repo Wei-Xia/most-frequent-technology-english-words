@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: production
 title: Anyway.ABC 安妮薇术语小词典
 ---
 
@@ -51,7 +51,7 @@ title: Anyway.ABC 安妮薇术语小词典
   {% for category in site.categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
     {% assign number = forloop.index %}
-    <div class="category-label"><span><strong>0{{ number }}.</strong> {{ category_name }}</span></div>
+    <div class="category-label"><span>0{{ number }}. {{ category_name }}</span></div>
     {% for post in site.categories[category_name ] %}
     <div class="item" :class=" nowPlaying == true & currentWord == '{{ post.title  | downcase }}' ? 'playing' : '' ">
       <div class="word"><span>{{ post.word }}</span></div>
