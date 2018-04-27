@@ -47,7 +47,7 @@
 
 	<main id="abc">
 		{{ content }}
-		<audio :src="'http://dict.youdao.com/dictvoice?audio='+currentWord+'&type=2'" id="voice-file" loop preload="none"></audio>
+		<audio :src="voiceFileUrl" id="voice-file" loop preload="none"></audio>
 
 		<div class="ref">
 			<h2>
@@ -103,23 +103,32 @@
 			el: '#abc',
 			data: {
 				nowPlaying: false,
+				voiceFileUrl: 'http://dict.youdao.com/dictvoice?audio=anyway&type=2',
 				currentWord: "anyway"
 			},
 			methods: {
-				playNow: function (word) {
+				playNow: function (word,isCustomized) {
+					console.log(isCustomized);
+
 					if ( word == a.currentWord) {
 						audio.pause()
 						a.nowPlaying = !a.nowPlaying;
 							if (a.nowPlaying == true) {
 								var newAudio = setTimeout("audio.play()",50)
 							}
-						console.log(a.nowPlaying);
 					}
 					else {
 						a.nowPlaying = true
 						a.currentWord = word
+
+						if ( isCustomized == '1' ){
+							a.voiceFileUrl = 'https://anw.red/anyway.abc/audio/' + a.currentWord + '.mp3'
+						}
+						else {
+							a.voiceFileUrl = 'http://dict.youdao.com/dictvoice?audio=' + a.currentWord + '&type=2'
+						}
+						
 						var newAudio = setTimeout("audio.play()",50)
-						console.log(a.nowPlaying);
 					}
 
 				}
