@@ -72,9 +72,7 @@
 				<li><a href="https://github.com/Anyway-Design/Anyway.ABC"><span>09</span>本站源码 @ GitHub</a></li>
 			</ol>
 		</div>
-
 	</main>
-
 
 
 	<div class="the-end">
@@ -108,8 +106,6 @@
 			},
 			methods: {
 				playNow: function (word,isCustomized) {
-					console.log(isCustomized);
-
 					if ( word == a.currentWord) {
 						audio.pause()
 						a.nowPlaying = !a.nowPlaying;
@@ -127,7 +123,7 @@
 						else {
 							a.voiceFileUrl = 'http://dict.youdao.com/dictvoice?audio=' + a.currentWord + '&type=2'
 						}
-						
+
 						var newAudio = setTimeout("audio.play()",50)
 					}
 
@@ -147,15 +143,6 @@
 		var s = document.getElementsByTagName("script")[0];
 		s.parentNode.insertBefore(hm, s);
 		})();
-	</script>
-
-	<!-- ~Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94081953-2"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'UA-94081953-2');
 	</script>
 
 </body>
