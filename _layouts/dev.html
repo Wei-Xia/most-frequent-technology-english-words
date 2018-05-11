@@ -101,7 +101,7 @@
 			el: '#abc',
 			data: {
 				nowPlaying: false,
-				voiceFileUrl: 'https://dict.youdao.com/dictvoice?audio=anyway&type=2',
+				voiceFileUrl: 'http://dict.youdao.com/dictvoice?audio=anyway&type=2',
 				currentWord: "anyway"
 			},
 			methods: {
@@ -121,7 +121,7 @@
 							a.voiceFileUrl = 'https://s.anw.red/anyway.abc/audio/' + a.currentWord + '.mp3'
 						}
 						else {
-							a.voiceFileUrl = 'https://dict.youdao.com/dictvoice?audio=' + a.currentWord + '&type=2'
+							a.voiceFileUrl = 'http://dict.youdao.com/dictvoice?audio=' + a.currentWord + '&type=2'
 						}
 
 						var newAudio = setTimeout("audio.play()",50)
