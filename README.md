@@ -82,3 +82,4 @@
 |  traceability  |   noun    |     可追溯性     |
 |   undertake    |   verb    |       承担       |
 |  utilization   |   noun    |    利用，使用    |
+| workaround    |   noun    |     解决方案     |
