@@ -68,7 +68,6 @@
 |     robust     | adjective |      强健的      |
 |    roll off    |   verb    |    渐渐地退出    |
 |  scalability   |   noun    |     可扩展性     |
-|  scalability   |   noun    |     可扩展性     |
 |   scenarios    |   noun    |       场景       |
 |     scope      |   noun    |       范围       |
 | simultaneously |  adverb   |      同时地      |
