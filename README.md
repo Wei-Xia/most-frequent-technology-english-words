@@ -4,12 +4,14 @@
 
 - 可以是 IT 相关的词汇
 - 可以是工作中常用到的词汇
+- 最好是高频词
 - 最好**不是**生活中的常用语
 
 ## 贡献
 
 - 满足条件的词汇，可以通过 Pull Request 来更新列表
 - 如发现有错误翻译，或者更合适的翻译，也可以通过 Pull Request 来更新列表
+- 请按照单词首字母顺序进行更新
 
 ## 列表
 
@@ -26,7 +28,7 @@
 |  Concatenate   |   verb    |       连接       |
 |   Concurrent   | adjective |      并发的      |
 | Differentiate  |   verb    |       区别       |
-|  Encapsulate   |   verb    |       压缩       |
+|  Encapsulate   |   verb    |    压缩，封装    |
 |    Explicit    | adjective |    明确清楚的    |
 |  Hierarchical  | adjective |      分层的      |
 |   Inexplicit   | adjective |    含糊不清的    |
