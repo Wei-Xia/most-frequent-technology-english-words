@@ -12,6 +12,7 @@
 - 满足条件的词汇，可以通过 Pull Request 来更新列表
 - 如发现有错误翻译，或者更合适的翻译，也可以通过 Pull Request 来更新列表
 - 请按照单词首字母顺序进行更新
+- 单词首字母请小写
 
 ### To-do List
 
@@ -24,42 +25,61 @@
 
 |      单词      |   词性    |       意思       |
 | :------------: | :-------: | :--------------: |
-|   Aggregate    |   verb    |       聚合       |
-|  Aggregation   |   noun    |       聚合       |
-|  Asynchronous  | adjective |      异步的      |
-|    Capacity    |   noun    |    能力、容量    |
-|    Caveats     |   noun    |     注意事项     |
-|   Complexity   |   noun    |      复杂性      |
-|  Concatenate   |   verb    |       连接       |
-|   Concurrent   | adjective |      并发的      |
-| Differentiate  |   verb    |       区别       |
-|  Encapsulate   |   verb    |    压缩、封装    |
-|    Explicit    | adjective |    明确清楚的    |
-|  Hierarchical  | adjective |      分层的      |
-|   Inexplicit   | adjective |    含糊不清的    |
-|   Intrusive    | adjective |     侵入式的     |
-|   Intuitive    | adjective |      直觉的      |
-|    Latency     |   noun    |       延迟       |
-|   Mechanism    |   noun    |       机制       |
-| Miscellaneous  | adjective | 混杂、各式各样的 |
-|    Populate    |   verb    |     输入数据     |
-|    Protocol    |   noun    |       协议       |
-|   Provision    |   noun    |    规定、条款    |
-|  Reliability   |   noun    |      可靠性      |
-|     Retain     |   verb    |       保持       |
-|     Robust     | adjective |      强健的      |
-|    Roll off    |   verb    |    渐渐地退出    |
-|  Scalability   |   noun    |     可扩展性     |
-|   Scenarios    |   noun    |       场景       |
-|     Scope      |   noun    |       范围       |
-| Simultaneously |  adverb   |      同时地      |
-|   Subsidiary   |   noun    |      子公司      |
-|  Sustainable   | adjective |     可持续的     |
-|    Takeaway    |   noun    |  收获、学到什么  |
-|   Threshold    |   noun    |       阈值       |
-|    Thrilled    | adjective |    非常兴奋的    |
-|   Throughput   |   noun    |      吞吐量      |
-|     Tilde      |   noun    |     波浪号 ~     |
-|   Undertake    |   verb    |       承担       |
-|  Utilization   |   noun    |    利用，使用    |
-|  Workaround    |   noun    |     解决方案     |
+|   aggregate    |   verb    |       聚合       |
+|  aggregation   |   noun    |       聚合       |
+|    analyze     |   verb    |       分析       |
+|  architecture  |   noun    |       架构       |
+|  asynchronous  | adjective |      异步的      |
+|    capacity    |   noun    |    能力、容量    |
+|    caveats     |   noun    |     注意事项     |
+|   complexity   |   noun    |      复杂性      |
+|  concatenate   |   verb    |       连接       |
+|   concurrent   | adjective |      并发的      |
+|  consumption   |   noun    |       消耗       |
+| differentiate  |   verb    |       区别       |
+|   efficiency   |   noun    |       效率       |
+|    elastic     | adjective |   灵活有弹性的   |
+|  encapsulate   |   verb    |    压缩、封装    |
+|  expenditure   |   noun    |    支出，经费    |
+|    explicit    | adjective |    明确清楚的    |
+|    failover    |   noun    |     故障切换     |
+|  hierarchical  | adjective |      分层的      |
+|    incident    |   noun    |       事故       |
+|   inexplicit   | adjective |    含糊不清的    |
+| infrastructure |   noun    |     基础结构     |
+|   intrusive    | adjective |     侵入式的     |
+|   intuitive    | adjective |      直觉的      |
+|    latency     |   noun    |       延迟       |
+|   mechanism    |   noun    |       机制       |
+|    metrics     |   noun    |     度量指标     |
+| miscellaneous  | adjective | 混杂、各式各样的 |
+|    notation    |   noun    |    注释、标注    |
+|  optimization  |   noun    |       优化       |
+|    optimize    |   verb    |       优化       |
+|    polyfill    |   noun    |      填充物      |
+|    populate    |   verb    |     输入数据     |
+|   privilege    |   noun    |       特权       |
+|    protocol    |   noun    |       协议       |
+|   provision    |   noun    |    规定、条款    |
+|   redundancy   |   noun    |       冗余       |
+|  reliability   |   noun    |      可靠性      |
+|   resilience   |   noun    |      回弹性      |
+|     retain     |   verb    |       保持       |
+|     robust     | adjective |      强健的      |
+|    roll off    |   verb    |    渐渐地退出    |
+|  scalability   |   noun    |     可扩展性     |
+|   scenarios    |   noun    |       场景       |
+|     scope      |   noun    |       范围       |
+| simultaneously |  adverb   |      同时地      |
+|   subsidiary   |   noun    |      子公司      |
+|  sustainable   | adjective |     可持续的     |
+|    takeaway    |   noun    |  收获、学到什么  |
+|   threshold    |   noun    |       阈值       |
+|    thrilled    | adjective |    非常兴奋的    |
+|   throughput   |   noun    |      吞吐量      |
+|     tilde      |   noun    |     波浪号～     |
+|   tolerance    |   noun    |       容忍       |
+|  traceability  |   noun    |     可追溯性     |
+|   undertake    |   verb    |       承担       |
+|  utilization   |   noun    |    利用，使用    |
+| workaround    |   noun    |     解决方案     |
