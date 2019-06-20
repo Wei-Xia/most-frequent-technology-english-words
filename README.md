@@ -27,13 +27,13 @@
 |   Aggregate    |   verb    |       聚合       |
 |  Aggregation   |   noun    |       聚合       |
 |  Asynchronous  | adjective |      异步的      |
-|    Capacity    |   noun    |   能力；容量；   |
+|    Capacity    |   noun    |    能力、容量    |
 |    Caveats     |   noun    |     注意事项     |
 |   Complexity   |   noun    |      复杂性      |
 |  Concatenate   |   verb    |       连接       |
 |   Concurrent   | adjective |      并发的      |
 | Differentiate  |   verb    |       区别       |
-|  Encapsulate   |   verb    |    压缩，封装    |
+|  Encapsulate   |   verb    |    压缩、封装    |
 |    Explicit    | adjective |    明确清楚的    |
 |  Hierarchical  | adjective |      分层的      |
 |   Inexplicit   | adjective |    含糊不清的    |
@@ -44,7 +44,7 @@
 | Miscellaneous  | adjective | 混杂、各式各样的 |
 |    Populate    |   verb    |     输入数据     |
 |    Protocol    |   noun    |       协议       |
-|   Provision    |   noun    |   规定；条款；   |
+|   Provision    |   noun    |    规定、条款    |
 |  Reliability   |   noun    |      可靠性      |
 |     Retain     |   verb    |       保持       |
 |     Robust     | adjective |      强健的      |
