@@ -62,3 +62,4 @@
 |     Tilde      |   noun    |     波浪号 ~     |
 |   Undertake    |   verb    |       承担       |
 |  Utilization   |   noun    |    利用，使用    |
+|  Workaround    |   noun    |     解决方案     |
