@@ -16,7 +16,7 @@
 - 请按照单词首字母顺序进行更新
 - 单词首字母请小写
 
-### Feture Request
+### Feature Request
 
 - 请直接提 issue 来增加需要添加的新功能或单词列表
 
