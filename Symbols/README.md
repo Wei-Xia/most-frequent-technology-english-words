@@ -10,7 +10,7 @@
 |  ?   |     question mark      |   问号   |
 |  -   |         hyphen         |  连字符  |
 |  \*  |        asterisk        |   星号   |
-|  —-  |          dash          |  破折号  |
+|  —   |          dash          |  破折号  |
 |  \_  |       underscore       |  下划线  |
 |  '   | single quotation marks |  单引号  |
 |  "   | double quotation marks |  双引号  |
