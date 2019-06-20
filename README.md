@@ -16,15 +16,16 @@
 - 请按照单词首字母顺序进行更新
 - 单词首字母请小写
 
-### Feature Request
+## Feature Request
 
 - 请直接提 issue 来增加需要添加的新功能或单词列表
 
-### To-do List
+## To-do List
 
 - [ ] 将单词按照词性进行分组
 - [x] 给单词增加超链接，点击直接跳转到 Google 搜索发音
 - [ ] 增加英语符号特辑，将英语符号单独放在一个文档里
+- [ ] 创建一个 host 在 Github Page 上的静态网站，增加 filter 检索功能
 
 ## 列表
 
