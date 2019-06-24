@@ -24,76 +24,118 @@
 
 - [ ] 将单词按照词性进行分组
 - [x] 给单词增加超链接，点击直接跳转到 Google 搜索发音
-- [ ] 增加英语符号特辑，将英语符号单独放在一个文档里 - _正在进行中......_
+- [ ] (ongoing) 增加英语符号特辑，将英语符号单独放在一个文档里
 - [ ] 创建一个的静态网站，增加 filter 检索功能
 - [ ] 在静态网站上创建 online quiz，第一步打算以选择题的形式进行记忆测试
 
 ## 列表
 
-|      单词      |   词性    |          意思          |                                                                                                                      词典 & 发音                                                                                                                      |
-| :------------: | :-------: | :--------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|   aggregate    |   verb    |          聚合          |        [Longman](https://www.ldoceonline.com/search/english/direct/?q=aggregate) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=aggregate) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+aggregate)         |
-|  aggregation   |   noun    |          聚合          |     [Longman](https://www.ldoceonline.com/search/english/direct/?q=aggregation) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=aggregation) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+aggregation)      |
-|    analyze     |   verb    |          分析          |           [Longman](https://www.ldoceonline.com/search/english/direct/?q=analyze) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=analyze) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+analyze)            |
-|  architecture  |   noun    |          架构          |    [Longman](https://www.ldoceonline.com/search/english/direct/?q=architecture) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=architecture) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+architecture)    |
-|  asynchronous  | adjective |         异步的         |    [Longman](https://www.ldoceonline.com/search/english/direct/?q=asynchronous) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=asynchronous) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+asynchronous)    |
-|    capacity    |   noun    |       能力、容量       |          [Longman](https://www.ldoceonline.com/search/english/direct/?q=capacity) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=capacity) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+capacity)          |
-|    caveats     |   noun    |        注意事项        |           [Longman](https://www.ldoceonline.com/search/english/direct/?q=caveats) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=caveats) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+caveats)            |
-|   complexity   |   noun    |         复杂性         |       [Longman](https://www.ldoceonline.com/search/english/direct/?q=complexity) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=complexity) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+complexity)       |
-|  concatenate   |   verb    |          连接          |     [Longman](https://www.ldoceonline.com/search/english/direct/?q=concatenate) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=concatenate) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+concatenate)      |
-|   concurrent   | adjective |         并发的         |       [Longman](https://www.ldoceonline.com/search/english/direct/?q=concurrent) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=concurrent) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+concurrent)       |
-|  consumption   |   noun    |          消耗          |     [Longman](https://www.ldoceonline.com/search/english/direct/?q=consumption) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=consumption) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+consumption)      |
-|  degradation   |   noun    |          降级          |     [Longman](https://www.ldoceonline.com/search/english/direct/?q=degradation) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=degradation) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+degradation)      |
-| differentiate  |   verb    |          区别          |  [Longman](https://www.ldoceonline.com/search/english/direct/?q=differentiate) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=differentiate) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+differentiate)   |
-|   efficiency   |   noun    |          效率          |       [Longman](https://www.ldoceonline.com/search/english/direct/?q=efficiency) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=efficiency) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+efficiency)       |
-|    elastic     | adjective |      灵活有弹性的      |           [Longman](https://www.ldoceonline.com/search/english/direct/?q=elastic) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=elastic) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+elastic)            |
-|  encapsulate   |   verb    |       压缩、封装       |     [Longman](https://www.ldoceonline.com/search/english/direct/?q=encapsulate) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=encapsulate) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+encapsulate)      |
-|    ephemeral    | adjective |       短暂性的      |          [Longman](https://www.ldoceonline.com/search/english/direct/?q=ephemeral) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=ephemeral) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+ephemeral)          |
-|    escalate    |   verb    |          升级          |          [Longman](https://www.ldoceonline.com/search/english/direct/?q=escalate) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=escalate) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+escalate)          |
-|  expenditure   |   noun    |       支出，经费       |     [Longman](https://www.ldoceonline.com/search/english/direct/?q=expenditure) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=expenditure) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+expenditure)      |
-|    explicit    | adjective |       明确清楚的       |          [Longman](https://www.ldoceonline.com/search/english/direct/?q=explicit) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=explicit) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+explicit)          |
-|    failover    |   noun    |        故障切换        |          [Longman](https://www.ldoceonline.com/search/english/direct/?q=failover) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=failover) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+failover)          |
-|  hierarchical  | adjective |         分层的         |    [Longman](https://www.ldoceonline.com/search/english/direct/?q=hierarchical) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=hierarchical) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+hierarchical)    |
-|     impact     |   noun    |       绩效，影响       |             [Longman](https://www.ldoceonline.com/search/english/direct/?q=impact) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=impact) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+impact)             |
-|   impression   |   noun    |      （广告）曝光      |       [Longman](https://www.ldoceonline.com/search/english/direct/?q=impression) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=impression) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+impression)       |
-|    incident    |   noun    |          事故          |          [Longman](https://www.ldoceonline.com/search/english/direct/?q=incident) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=incident) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+incident)          |
-|   inexplicit   | adjective |       含糊不清的       |       [Longman](https://www.ldoceonline.com/search/english/direct/?q=inexplicit) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=inexplicit) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+inexplicit)       |
-| infrastructure |   noun    |        基础结构        | [Longman](https://www.ldoceonline.com/search/english/direct/?q=infrastructure) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=infrastructure) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+infrastructure) |
-|   intrusive    | adjective |        侵入式的        |        [Longman](https://www.ldoceonline.com/search/english/direct/?q=intrusive) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=intrusive) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+intrusive)         |
-|   intuitive    | adjective |         直觉的         |        [Longman](https://www.ldoceonline.com/search/english/direct/?q=intuitive) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=intuitive) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+intuitive)         |
-|    latency     |   noun    |          延迟          |           [Longman](https://www.ldoceonline.com/search/english/direct/?q=latency) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=latency) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+latency)            |
-|    leverage    |   verb    |       借用、利用       |          [Longman](https://www.ldoceonline.com/search/english/direct/?q=leverage) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=leverage) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+leverage)          |
-|   mechanism    |   noun    |          机制          |        [Longman](https://www.ldoceonline.com/search/english/direct/?q=mechanism) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=mechanism) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+mechanism)         |
-|    metrics     |   noun    |        度量指标        |           [Longman](https://www.ldoceonline.com/search/english/direct/?q=metrics) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=metrics) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+metrics)            |
-| miscellaneous  | adjective |    混杂、各式各样的    |  [Longman](https://www.ldoceonline.com/search/english/direct/?q=miscellaneous) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=miscellaneous) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+miscellaneous)   |
-|    notation    |   noun    |       注释、标注       |          [Longman](https://www.ldoceonline.com/search/english/direct/?q=notation) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=notation) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+notation)          |
-|  optimization  |   noun    |          优化          |    [Longman](https://www.ldoceonline.com/search/english/direct/?q=optimization) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=optimization) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+optimization)    |
-|    optimize    |   verb    |          优化          |          [Longman](https://www.ldoceonline.com/search/english/direct/?q=optimize) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=optimize) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+optimize)          |
-|    overhead    |   noun    |          虚耗          |                 [Longman](https://www.ldoceonline.com/dictionary/overhead) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=overhead) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+overhead)                 |
-|    polyfill    |   noun    |         填充物         |          [Longman](https://www.ldoceonline.com/search/english/direct/?q=polyfill) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=polyfill) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+polyfill)          |
-|    populate    |   verb    |        输入数据        |          [Longman](https://www.ldoceonline.com/search/english/direct/?q=populate) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=populate) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+populate)          |
-|   privilege    |   noun    |          特权          |        [Longman](https://www.ldoceonline.com/search/english/direct/?q=privilege) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=privilege) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+privilege)         |
-|    protocol    |   noun    |          协议          |          [Longman](https://www.ldoceonline.com/search/english/direct/?q=protocol) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=protocol) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+protocol)          |
-|   provision    |   noun    |       规定、条款       |        [Longman](https://www.ldoceonline.com/search/english/direct/?q=provision) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=provision) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+provision)         |
-|   redundancy   |   noun    |          冗余          |       [Longman](https://www.ldoceonline.com/search/english/direct/?q=redundancy) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=redundancy) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+redundancy)       |
-|  reliability   |   noun    |         可靠性         |     [Longman](https://www.ldoceonline.com/search/english/direct/?q=reliability) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=reliability) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+reliability)      |
-|   resilience   |   noun    |         回弹性         |       [Longman](https://www.ldoceonline.com/search/english/direct/?q=resilience) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=resilience) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+resilience)       |
-|     retain     |   verb    |          保持          |             [Longman](https://www.ldoceonline.com/search/english/direct/?q=retain) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=retain) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+retain)             |
-|     robust     | adjective |         强健的         |             [Longman](https://www.ldoceonline.com/search/english/direct/?q=robust) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=robust) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+robust)             |
-|    roll off    |   verb    |       渐渐地退出       |          [Longman](https://www.ldoceonline.com/search/english/direct/?q=roll-off) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=roll-off) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+roll-off)          |
-|  scalability   |   noun    |        可扩展性        |     [Longman](https://www.ldoceonline.com/search/english/direct/?q=scalability) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=scalability) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+scalability)      |
-|   scenarios    |   noun    |          场景          |        [Longman](https://www.ldoceonline.com/search/english/direct/?q=scenarios) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=scenarios) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+scenarios)         |
-|     scope      |   noun    |          范围          |              [Longman](https://www.ldoceonline.com/search/english/direct/?q=scope) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=scope) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+scope)               |
-| simultaneously |  adverb   |         同时地         | [Longman](https://www.ldoceonline.com/search/english/direct/?q=simultaneously) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=simultaneously) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+simultaneously) |
-|   subsidiary   |   noun    |         子公司         |       [Longman](https://www.ldoceonline.com/search/english/direct/?q=subsidiary) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=subsidiary) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+subsidiary)       |
-|  sustainable   | adjective |        可持续的        |     [Longman](https://www.ldoceonline.com/search/english/direct/?q=sustainable) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=sustainable) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+sustainable)      |
-|  synchronous   | adjective |         同步的         |     [Longman](https://www.ldoceonline.com/search/english/direct/?q=synchronous) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=synchronous) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+synchronous)      |
-|    takeaway    |   noun    |     收获、学到什么     |          [Longman](https://www.ldoceonline.com/search/english/direct/?q=takeaway) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=takeaway) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+takeaway)          |
-|   threshold    |   noun    |          阈值          |        [Longman](https://www.ldoceonline.com/search/english/direct/?q=threshold) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=threshold) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+threshold)         |
-|    thrilled    | adjective |       非常兴奋的       |          [Longman](https://www.ldoceonline.com/search/english/direct/?q=thrilled) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=thrilled) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+thrilled)          |
-|   throughput   |   noun    |         吞吐量         |       [Longman](https://www.ldoceonline.com/search/english/direct/?q=throughput) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=throughput) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+throughput)       |
-|   tolerance    |   noun    |          容忍          |        [Longman](https://www.ldoceonline.com/search/english/direct/?q=tolerance) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=tolerance) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+tolerance)         |
-|  traceability  |   noun    |        可追溯性        |    [Longman](https://www.ldoceonline.com/search/english/direct/?q=traceability) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=traceability) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+traceability)    |
-|   undertake    |   verb    |          承担          |        [Longman](https://www.ldoceonline.com/search/english/direct/?q=undertake) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=undertake) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+undertake)         |
-|  utilization   |   noun    |       利用，使用       |     [Longman](https://www.ldoceonline.com/search/english/direct/?q=utilization) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=utilization) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+utilization)      |
-|   workaround   |   noun    | 具有迂回性质的解决方案 |       [Longman](https://www.ldoceonline.com/search/english/direct/?q=workaround) • [Oxford](https://www.oxfordlearnersdictionaries.com/search/english/?q=workaround) • [Google 🔈](https://www.google.com/search?q=how+to+pronounce+workaround)       |
+|       单词       |   词性    |          意思          |                                      发音                                      |
+| :--------------: | :-------: | :--------------------: | :----------------------------------------------------------------------------: |
+|    aggregate     |   verb    |          聚合          |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+aggregate)     |
+|   aggregation    |   noun    |          聚合          |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+aggregation)    |
+|     analyze      |   verb    |          分析          |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+analyze)      |
+|    arbitrary     | adjective |         任意的         |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+arbitrary)     |
+|   architecture   |   noun    |          架构          |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+architecture)   |
+|   asynchronous   | adjective |         异步的         |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+asynchronous)   |
+|  authentication  |   noun    |        身份验证        |  [Google 🔈](https://www.google.com/search?q=how+to+pronounce+authentication)  |
+|  authorization   |   noun    |          授权          |  [Google 🔈](https://www.google.com/search?q=how+to+pronounce+authorization)   |
+|     capacity     |   noun    |       能力、容量       |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+capacity)     |
+|     capture      |   verb    |       捕捉、抓取       |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+capture)      |
+|     caveats      |   noun    |        注意事项        |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+caveats)      |
+|    complexity    |   noun    |         复杂性         |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+complexity)    |
+|    compliance    |   noun    |          合规          |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+compliance)    |
+|  comprehensive   | adjective |         综合的         |  [Google 🔈](https://www.google.com/search?q=how+to+pronounce+comprehensive)   |
+|    compromise    | adjective |          泄漏          |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+compromise)    |
+|   concatenate    |   verb    |          连接          |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+concatenate)    |
+|     concrete     | adjective |     具体的、有形的     |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+concrete)     |
+|    concurrent    | adjective |         并发的         |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+concurrent)    |
+| confidentiality  |   noun    |         保密性         | [Google 🔈](https://www.google.com/search?q=how+to+pronounce+confidentiality)  |
+|     constant     | adjective |         经常的         |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+constant)     |
+|   consumption    |   noun    |          消耗          |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+consumption)    |
+|   customizable   | adjective |        可定制的        |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+customizable)   |
+|    dedicated     | adjective |         专属的         |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+dedicated)     |
+|   degradation    |   noun    |          降级          |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+degradation)    |
+|    deprecated    | adjective |         弃用的         |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+deprecated)    |
+|  differentiate   |   verb    |          区别          |  [Google 🔈](https://www.google.com/search?q=how+to+pronounce+differentiate)   |
+|   distinction    |   noun    |       区别、差别       |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+distinction)    |
+|    durability    |   noun    |         持久性         |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+durability)    |
+|    efficiency    |   noun    |          效率          |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+efficiency)    |
+|     elastic      | adjective |      灵活有弹性的      |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+elastic)      |
+|   encapsulate    |   verb    |       压缩、封装       |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+encapsulate)    |
+|    encryption    |   noun    |          加密          |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+encryption)    |
+|    ephemeral     | adjective |        短暂性的        |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+ephemeral)     |
+|     escalate     |   verb    |          升级          |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+escalate)     |
+|   expenditure    |   noun    |       支出，经费       |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+expenditure)    |
+|     explicit     | adjective |       明确清楚的       |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+explicit)     |
+|     failover     |   noun    |        故障切换        |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+failover)     |
+|    federation    |   noun    |        联合授权        |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+federation)    |
+|     granular     | adjective |         颗粒的         |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+granular)     |
+|   hierarchical   | adjective |         分层的         |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+hierarchical)   |
+|    hypervisor    |   noun    | 虚拟机器监视器（VMM）  |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+hypervisor)    |
+|      impact      |   noun    |       绩效，影响       |      [Google 🔈](https://www.google.com/search?q=how+to+pronounce+impact)      |
+|    impression    |   noun    |      （广告）曝光      |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+impression)    |
+|     incident     |   noun    |          事故          |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+incident)     |
+|    inexplicit    | adjective |       含糊不清的       |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+inexplicit)    |
+|  infrastructure  |   noun    |        基础结构        |  [Google 🔈](https://www.google.com/search?q=how+to+pronounce+infrastructure)  |
+|    inititives    |   noun    |       方案、倡议       |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+inititives)    |
+|   integration    |   noun    |          集成          |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+integration)    |
+|    integrity     |   noun    |         完整性         |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+integrity)     |
+|    intrusive     | adjective |        侵入式的        |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+intrusive)     |
+|    intuitive     | adjective |         直觉的         |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+intuitive)     |
+|     latency      |   noun    |          延迟          |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+latency)      |
+|     leverage     |   verb    |       借用、利用       |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+leverage)     |
+| magnetic storage |   noun    |         磁储存         | [Google 🔈](https://www.google.com/search?q=how+to+pronounce+magnetic+storage) |
+|     malware      |   noun    |        恶意软件        |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+malware)      |
+|      marry       |   verb    |       结合、联合       |      [Google 🔈](https://www.google.com/search?q=how+to+pronounce+marry)       |
+|      mature      | adjective |         成熟的         |      [Google 🔈](https://www.google.com/search?q=how+to+pronounce+mature)      |
+|    mechanism     |   noun    |          机制          |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+mechanism)     |
+|     metrics      |   noun    |        度量指标        |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+metrics)      |
+|  miscellaneous   | adjective |    混杂、各式各样的    |  [Google 🔈](https://www.google.com/search?q=how+to+pronounce+miscellaneous)   |
+|      model       |   noun    |          模型          |      [Google 🔈](https://www.google.com/search?q=how+to+pronounce+model)       |
+|      module      |   noun    |          模块          |      [Google 🔈](https://www.google.com/search?q=how+to+pronounce+module)      |
+|     notation     |   noun    |       注释、标注       |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+notation)     |
+|   optimization   |   noun    |          优化          |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+optimization)   |
+|     optimize     |   verb    |          优化          |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+optimize)     |
+|     overhead     |   noun    |          虚耗          |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+overhead)     |
+|    oversight     |   noun    |       疏忽、失察       |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+oversight)     |
+|    permanent     | adjective |         永久的         |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+permanent)     |
+|     polyfill     |   noun    |         填充物         |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+polyfill)     |
+|     populate     |   verb    |        输入数据        |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+populate)     |
+|     priority     |   noun    |        优先次序        |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+priority)     |
+|    privilege     |   noun    |          特权          |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+privilege)     |
+|     protocol     |   noun    |          协议          |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+protocol)     |
+|     protocol     |   noun    |          协议          |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+protocol)     |
+|    provision     |   noun    |       规定、条款       |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+provision)     |
+|      rapid       | adjective |     迅速的、飞快的     |      [Google 🔈](https://www.google.com/search?q=how+to+pronounce+rapid)       |
+|    redundancy    |   noun    |          冗余          |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+redundancy)    |
+|   reliability    |   noun    |         可靠性         |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+reliability)    |
+|    resilience    |   noun    |         回弹性         |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+resilience)    |
+|    resilient     | adjective |   有弹力的、能恢复的   |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+resilient)     |
+|      retain      |   verb    |          保持          |      [Google 🔈](https://www.google.com/search?q=how+to+pronounce+retain)      |
+|      robust      | adjective |         强健的         |      [Google 🔈](https://www.google.com/search?q=how+to+pronounce+robust)      |
+|     roll off     |   verb    |       渐渐地退出       |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+roll+off)     |
+|   scalability    |   noun    |        可扩展性        |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+scalability)    |
+|    scenarios     |   noun    |          场景          |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+scenarios)     |
+|      scope       |   noun    |          范围          |      [Google 🔈](https://www.google.com/search?q=how+to+pronounce+scope)       |
+|     seamless     | adjective |         无缝的         |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+seamless)     |
+|   significant    | adjective |    重大的，有意义的    |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+significant)    |
+|  simultaneously  |  adverb   |         同时地         |  [Google 🔈](https://www.google.com/search?q=how+to+pronounce+simultaneously)  |
+|  sophisticated   | adjective |   复杂的、富有经验的   |  [Google 🔈](https://www.google.com/search?q=how+to+pronounce+sophisticated)   |
+|    standalone    | adjective |         单独的         |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+standalone)    |
+|    streamline    |   verb    |     使现代化、组织     |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+streamline)    |
+|    strengths     |   noun    |          优势          |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+strengths)     |
+|      stroke      |   noun    |          笔画          |      [Google 🔈](https://www.google.com/search?q=how+to+pronounce+stroke)      |
+|    subsidiary    |   noun    |         子公司         |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+subsidiary)    |
+|   sustainable    | adjective |        可持续的        |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+sustainable)    |
+|   synchronous    | adjective |         同步的         |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+synchronous)    |
+|     takeaway     |   noun    |     收获、学到什么     |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+takeaway)     |
+|    threshold     |   noun    |          阈值          |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+threshold)     |
+|     thrilled     | adjective |       非常兴奋的       |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+thrilled)     |
+|    throughput    |   noun    |         吞吐量         |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+throughput)    |
+|    tolerance     |   noun    |          容忍          |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+tolerance)     |
+|   traceability   |   noun    |        可追溯性        |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+traceability)   |
+|    undertake     |   verb    |          承担          |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+undertake)     |
+|   utilization    |   noun    |       利用，使用       |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+utilization)    |
+|    weaknesses    |   noun    |          劣势          |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+weaknesses)    |
+|    workaround    |   noun    | 具有迂回性质的解决方案 |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+workaround)    |
