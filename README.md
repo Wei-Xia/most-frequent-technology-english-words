@@ -30,7 +30,7 @@
 
 ## 列表
 
-|       单词       |   词性    |          意思          | 用法 |                                      发音                                      |
+|       单词       |   词性    |          意思          | 实例和使用场景 |                                      发音                                      |
 | :--------------: | :-------: | :--------------------: | :--: | :----------------------------------------------------------------------------: |
 |    aggregate     |   verb    |          聚合          |      |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+aggregate)     |
 |   aggregation    |   noun    |          聚合          |      |   [Google 🔈](https://www.google.com/search?q=how+to+pronounce+aggregation)    |
