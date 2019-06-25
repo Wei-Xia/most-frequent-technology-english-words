@@ -105,7 +105,6 @@
 |     priority     |   noun    |        优先次序        |      |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+priority)     |
 |    privilege     |   noun    |          特权          |      |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+privilege)     |
 |     protocol     |   noun    |          协议          |      |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+protocol)     |
-|     protocol     |   noun    |          协议          |      |     [Google 🔈](https://www.google.com/search?q=how+to+pronounce+protocol)     |
 |    provision     |   noun    |       规定、条款       |      |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+provision)     |
 |      rapid       | adjective |     迅速的、飞快的     |      |      [Google 🔈](https://www.google.com/search?q=how+to+pronounce+rapid)       |
 |    redundancy    |   noun    |          冗余          |      |    [Google 🔈](https://www.google.com/search?q=how+to+pronounce+redundancy)    |
