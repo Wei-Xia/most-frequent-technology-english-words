@@ -114,6 +114,7 @@
 |    resilience    |   noun    |         回弹性         |      |    `[rɪˈzɪliəns]` [🔈](https://www.google.com/search?q=how+to+pronounce+resilience)    |
 |    resilient     | adjective |   有弹力的、能恢复的   |      |    `[rɪˈzɪliənt]` [🔈](https://www.google.com/search?q=how+to+pronounce+resilient)     |
 |      retain      |   verb    |          保持          |      |      `[rɪˈteɪn]` [🔈](https://www.google.com/search?q=how+to+pronounce+retain)      |
+|   retrospective  | adjective |   追溯的、回顾的、复盘的  |      |  `[ˌrɛtrəˈspɛktɪv]` [🔈](https://www.google.com/search?q=how+to+pronounce+retrospective)   |
 |      robust      | adjective |         强健的         |      |      `[roʊˈbʌst]` [🔈](https://www.google.com/search?q=how+to+pronounce+robust)      |
 |     roll off     |   verb    |       渐渐地退出       |      |     `[roʊl ɔːf]` [🔈](https://www.google.com/search?q=how+to+pronounce+roll+off)     |
 |   scalability    |   noun    |        可扩展性        |      |   `[skeɪləˈbɪlɪti]` [🔈](https://www.google.com/search?q=how+to+pronounce+scalability)    |
