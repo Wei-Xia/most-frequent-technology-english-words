@@ -140,4 +140,4 @@
 |    undertake     |   verb    |          承担          |      |    `[ˌʌndərˈteɪk]` [🔈](https://www.google.com/search?q=how+to+pronounce+undertake)     |
 |   utilization    |   noun    |       利用，使用       |      |   `[ˌjuːtələˈzeɪʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+utilization)    |
 |    weaknesses    |   noun    |          劣势          |      |    `[ˈwiknəsəz]` [🔈](https://www.google.com/search?q=how+to+pronounce+weaknesses)    |
-|    workaround    |   noun    | 解决方案 |   特指方案具有迂回性质   |    `[ˈwɜːrkəraʊnd]` [🔈](https://www.google.com/search?q=how+to+pronounce+workaround)    |
+|    workaround    |   noun    | 变通方案 |   特指方案具有迂回性质   |    `[ˈwɜːrkəraʊnd]` [🔈](https://www.google.com/search?q=how+to+pronounce+workaround)    |
