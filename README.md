@@ -68,6 +68,8 @@
 |    encryption    |   noun    |          加密          |      |    `[ɛnˈkrɪpʃən]` [🔈](https://www.google.com/search?q=how+to+pronounce+encryption)    |
 |    ephemeral     | adjective |        短暂性的        |      |    `[ɪˈfemərəl]` [🔈](https://www.google.com/search?q=how+to+pronounce+ephemeral)     |
 |     escalate     |   verb    |          升级          |      |     `[ˈeskəleɪt]` [🔈](https://www.google.com/search?q=how+to+pronounce+escalate)     |
+|   evaluation     |   noun    |        评价，计算       |      |    `[ɪˌvæljuˈeɪʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+evaluation)    |
+|   evolution     |   noun    |        进化、演变       |      |    `[ˌiːvəˈluːʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+evolution)    |
 |   expenditure    |   noun    |       支出，经费       |      |   `[ɪkˈspendɪtʃər]` [🔈](https://www.google.com/search?q=how+to+pronounce+expenditure)    |
 |     explicit     | adjective |       明确清楚的       |      |     `[ɪkˈsplɪsɪt]` [🔈](https://www.google.com/search?q=how+to+pronounce+explicit)     |
 |     failover     |   noun    |        故障切换        |      |     `[feil'əuvər]` [🔈](https://www.google.com/search?q=how+to+pronounce+failover)     |
