@@ -36,12 +36,14 @@
 | :--------------: | :-------: | :--------------------: | :--: | :----------------------------------------------------------------------------: |
 |    aggregate     |   verb    |          聚合          |      |    `[ˈæɡrɪɡət]` [ 🔈](https://www.google.com/search?q=how+to+pronounce+aggregate)    |
 |   aggregation    |   noun    |          聚合          |      |   `[ˌæɡrɪˈɡeɪʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+aggregation)   |
+|   agile    |   adjective    |          敏捷、灵活的          |      |   `[ˈædʒl]` [🔈](https://www.google.com/search?q=how+to+pronounce+agile)   |
 |     analyze      |   verb    |          分析          |      |     `[ˈænəlaɪz]` [🔈](https://www.google.com/search?q=how+to+pronounce+analyze)      |
 |    arbitrary     | adjective |         任意的         |      |    `[ˈɑːrbɪtreri]` [🔈](https://www.google.com/search?q=how+to+pronounce+arbitrary)     |
 |   architecture   |   noun    |          架构          |      |   `[ˈɑːrkɪtektʃər]` [🔈](https://www.google.com/search?q=how+to+pronounce+architecture)   |
 |   asynchronous   | adjective |         异步的         |      |   `[eɪˈsɪŋkrənəs]` [🔈](https://www.google.com/search?q=how+to+pronounce+asynchronous)   |
 |  authentication  |   noun    |        身份验证        |      |  `[ɔːˌθentɪˈkeɪʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+authentication)  |
 |  authorization   |   noun    |          授权          |      |  `[ˌɔːθərəˈzeɪʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+authorization)   |
+|  automation   |   noun    |      自动化         |      |  `[ˌɔːtəˈmeɪʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+automation)   |
 |     capacity     |   noun    |       能力、容量       |      |     `[kəˈpæsəti]` [🔈](https://www.google.com/search?q=how+to+pronounce+capacity)     |
 |     capture      |   verb    |       捕捉、抓取       |      |     `[ˈkæptʃər]` [🔈](https://www.google.com/search?q=how+to+pronounce+capture)      |
 |     caveats      |   noun    |        注意事项        |      |     `[ˈkeɪviˌæts]` [🔈](https://www.google.com/search?q=how+to+pronounce+caveats)      |
@@ -55,15 +57,18 @@
 | confidentiality  |   noun    |         保密性         |      | `[ˌkɑːnfɪˌdenʃiˈæləti]` [🔈](https://www.google.com/search?q=how+to+pronounce+confidentiality)  |
 |     constant     | adjective |         经常的         |      |     `[ˈkɑːnstənt]` [🔈](https://www.google.com/search?q=how+to+pronounce+constant)     |
 |   consumption    |   noun    |          消耗          |      |   `[kənˈsʌmpʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+consumption)    |
+|   contrast    |   noun    |          对比          |      |   `[ˈkɑːntræst , kənˈtræst]` [🔈](https://www.google.com/search?q=how+to+pronounce+contrast)    |
 |   customizable   | adjective |        可定制的        |      |   `[ˈkʌstəˌmaɪzəbl]` [🔈](https://www.google.com/search?q=how+to+pronounce+customizable)   |
 |    dedicated     | adjective |         专属的         |      |    `[ˈdedɪkeɪtɪd]` [🔈](https://www.google.com/search?q=how+to+pronounce+dedicated)     |
 |   degradation    |   noun    |          降级          |      |   `[ˌdeɡrəˈdeɪʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+degradation)    |
+|   delivery    |   noun    |          交付          |      |   `[dɪˈlɪvəri]` [🔈](https://www.google.com/search?q=how+to+pronounce+delivery)    |
 |    deprecated    | adjective |         弃用的         |      |    `[ˈdeprəkeɪtɪd]` [🔈](https://www.google.com/search?q=how+to+pronounce+deprecated)    |
 |  differentiate   |   verb    |          区别          |      |  `[ˌdɪfəˈrenʃieɪt]` [🔈](https://www.google.com/search?q=how+to+pronounce+differentiate)   |
 |   distinction    |   noun    |       区别、差别       |      |   `[dɪˈstɪŋkʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+distinction)    |
 |    durability    |   noun    |         持久性         |      |    `[dərəˈbɪlɪti]` [🔈](https://www.google.com/search?q=how+to+pronounce+durability)    |
 |    efficiency    |   noun    |          效率          |      |    `[ɪˈfɪʃnsi]` [🔈](https://www.google.com/search?q=how+to+pronounce+efficiency)    |
 |     elastic      | adjective |      灵活有弹性的      |    AWS Elastic Compute Cloud (EC2) 有「弹性、伸缩性」的特点  |     `[ɪˈlæstɪk]` [🔈](https://www.google.com/search?q=how+to+pronounce+elastic)      |
+|     embrace      | verb |      拥抱、接受      |  拥抱某种技术    |   `[ɪmˈbreɪs]` [🔈](https://www.google.com/search?q=how+to+pronounce+embrace)      |
 |   encapsulate    |   verb    |       压缩、封装       |      |   `[ɪnˈkæpsjuleɪt]` [🔈](https://www.google.com/search?q=how+to+pronounce+encapsulate)    |
 |    encryption    |   noun    |          加密          |      |    `[ɛnˈkrɪpʃən]` [🔈](https://www.google.com/search?q=how+to+pronounce+encryption)    |
 |    ephemeral     | adjective |        短暂性的        |      |    `[ɪˈfemərəl]` [🔈](https://www.google.com/search?q=how+to+pronounce+ephemeral)     |
@@ -74,6 +79,7 @@
 |     explicit     | adjective |       明确清楚的       |      |     `[ɪkˈsplɪsɪt]` [🔈](https://www.google.com/search?q=how+to+pronounce+explicit)     |
 |     failover     |   noun    |        故障切换        |      |     `[feil'əuvər]` [🔈](https://www.google.com/search?q=how+to+pronounce+failover)     |
 |    federation    |   noun    |        联合授权        |      |    `[ˌfedəˈreɪʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+federation)    |
+|    furthermore    |   adjective    |        此外        |      |   `[ˌfɜːrðərˈmɔːr]` [🔈](https://www.google.com/search?q=how+to+pronounce+furthermore)    |
 |     granular     | adjective |         颗粒的         |      |     `[ˈɡrænjələr]` [🔈](https://www.google.com/search?q=how+to+pronounce+granular)     |
 |   hierarchical   | adjective |         分层的         |      |   `[ˌhaɪəˈrɑːrkɪkl]` [🔈](https://www.google.com/search?q=how+to+pronounce+hierarchical)   |
 |    hypervisor    |   noun    | 虚拟机器监视器（VMM）  |      |    `[ˌhaipə'vaizə]` [🔈](https://www.google.com/search?q=how+to+pronounce+hypervisor)    |
@@ -85,12 +91,15 @@
 |    initiatives    |   noun    |       方案、倡议       |      |    `[ɪˈnɪʃətɪvz]` [🔈](https://www.google.com/search?q=how+to+pronounce+inititives)    |
 |   integration    |   noun    |          集成          |      |   `[ˌɪntɪˈɡreɪʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+integration)    |
 |    integrity     |   noun    |         完整性         |      |    `[ɪnˈteɡrəti]` [🔈](https://www.google.com/search?q=how+to+pronounce+integrity)     |
+|    interaction     |   noun    |       交互、相互影响、干涉      |      |    `[ˌɪntəˈrækʃən]` [🔈](https://www.google.com/search?q=how+to+pronounce+interaction)  |
+|    intervention     |   noun    |     介入、干涉         |      |    `[ˌɪntərˈvenʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+intervention)     |
 |    intrusive     | adjective |        侵入式的        |      |    `[ɪnˈtruːsɪv]` [🔈](https://www.google.com/search?q=how+to+pronounce+intrusive)     |
 |    intuitive     | adjective |         直觉的         |      |    `[ɪnˈtuːɪtɪv]` [🔈](https://www.google.com/search?q=how+to+pronounce+intuitive)     |
 |     latency      |   noun    |          延迟          |      |     `['letnsi]` [🔈](https://www.google.com/search?q=how+to+pronounce+latency)      |
 |     leverage     |   verb    |       借用、利用       |      |     `[ˈlevərɪdʒ]` [🔈](https://www.google.com/search?q=how+to+pronounce+leverage)     |
 | magnetic storage |   noun    |         磁储存         |      | `[mæɡˈnetɪk ˈstɔːrɪdʒ]` [🔈](https://www.google.com/search?q=how+to+pronounce+magnetic+storage) |
 |     malware      |   noun    |        恶意软件        |      |     `[ˈmælwer]` [🔈](https://www.google.com/search?q=how+to+pronounce+malware)      |
+|     manually      |   adjective    |        手动的        |      |     `[ˈmænjuəli]` [🔈](https://www.google.com/search?q=how+to+pronounce+manually)      |
 |      marry       |   verb    |       结合、联合       |      |      `[ˈmæri]` [🔈](https://www.google.com/search?q=how+to+pronounce+marry)       |
 |      mature      | adjective |         成熟的         |      |      `[məˈtʃʊr]` [🔈](https://www.google.com/search?q=how+to+pronounce+mature)      |
 |    mechanism     |   noun    |          机制          |      |    `[ˈmekənɪzəm]` [🔈](https://www.google.com/search?q=how+to+pronounce+mechanism)     |
@@ -99,6 +108,7 @@
 |      model       |   noun    |          模型          |      |      `[ˈmɑːdl]` [🔈](https://www.google.com/search?q=how+to+pronounce+model)       |
 |      module      |   noun    |          模块          |      |      `[ˈmɑːdʒuːl]` [🔈](https://www.google.com/search?q=how+to+pronounce+module)      |
 |     notation     |   noun    |       注释、标注       |      |     `[noʊˈteɪʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+notation)     |
+|   occasion   |   noun    |          场合、机会          |      |   `[əˈkeɪʒn]` [🔈](https://www.google.com/search?q=how+to+pronounce+occasion)   |
 |   optimization   |   noun    |          优化          |      |   `[ˌɑːptɪməˈzeɪʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+optimization)   |
 |     optimize     |   verb    |          优化          |      |     `[ˈɑːptɪmaɪz]` [🔈](https://www.google.com/search?q=how+to+pronounce+optimize)     |
 |     overhead     |   noun    |          虚耗          |      |     `[ˌoʊvərˈhed]` [🔈](https://www.google.com/search?q=how+to+pronounce+overhead)     |
@@ -139,6 +149,7 @@
 |    throughput    |   noun    |         吞吐量         |      |    `[ˈθruːpʊt]` [🔈](https://www.google.com/search?q=how+to+pronounce+throughput)    |
 |    tolerance     |   noun    |          容忍          |      |    `[ˈtɑːlərəns]` [🔈](https://www.google.com/search?q=how+to+pronounce+tolerance)     |
 |   traceability   |   noun    |        可追溯性        |      |   `[ˌtreɪsəˈbɪlɪti]` [🔈](https://www.google.com/search?q=how+to+pronounce+traceability)   |
+|   tweak   |   verb    |        扭、调整        |      |   `[twiːk]` [🔈](https://www.google.com/search?q=how+to+pronounce+tweak)   |
 |    undertake     |   verb    |          承担          |      |    `[ˌʌndərˈteɪk]` [🔈](https://www.google.com/search?q=how+to+pronounce+undertake)     |
 |   utilization    |   noun    |       利用，使用       |      |   `[ˌjuːtələˈzeɪʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+utilization)    |
 |    weaknesses    |   noun    |          劣势          |      |    `[ˈwiknəsəz]` [🔈](https://www.google.com/search?q=how+to+pronounce+weaknesses)    |
