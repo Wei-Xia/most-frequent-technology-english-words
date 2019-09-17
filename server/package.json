@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run build",
+    "build": "nodemon 'src/server.ts' --exec 'ts-node' src/server.ts -e ts,graphql"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +18,8 @@
     "type-graphql": "^0.17.5"
   },
   "devDependencies": {
+    "@types/node": "^12.7.5",
     "nodemon": "^1.19.2",
-    "tslint": "^5.20.0",
     "typescript": "^3.6.3"
   }
 }

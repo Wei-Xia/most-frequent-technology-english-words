@@ -23,7 +23,7 @@
     "traceResolution": false,
     "pretty": true,
     "emitDecoratorMetadata": true,
-    "types": ["node", "jest"]
+    "types": ["node"]
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules", "build", "**/*.d.ts"],
