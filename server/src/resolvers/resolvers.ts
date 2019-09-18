@@ -1,13 +1,12 @@
-import { Cat } from '../models/car';
+import { wordList } from '../models/wordList';
 
 export const resolvers = {
   Query: {
-    hello: () => 'hi',
-    cats: () => Cat.find(),
+    words: () => wordList.find(),
   },
   Mutation: {
-    createCat: async (_, { name }) => {
-      const kitty = new Cat({ name });
+    createNewWord: async (_, { name }) => {
+      const kitty = new wordList({ name });
       await kitty.save();
       return kitty;
     },

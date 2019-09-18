@@ -3,13 +3,13 @@ import { gql } from 'apollo-server-express';
 export const typeDefs = gql`
   type Query {
     hello: String!
-    cats: [Cat!]!
+    words: [wordList!]!
   }
-  type Cat {
+  type wordList {
     id: ID!
     name: String!
   }
   type Mutation {
-    createCat(name: String!): Cat!
+    createNewWord(name: String!): wordList!
   }
 `;
