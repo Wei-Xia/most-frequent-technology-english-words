@@ -1,10 +1,10 @@
 import * as dotenvconfig from 'dotenv';
 
 export interface Config {
-  mongoDB: string;
+  mongodbURL: string;
 }
 dotenvconfig.config();
 
 export const settings: Config = {
-  mongoDB: process.env.URL || 'google.com',
+  mongodbURL: process.env.mongodbURL || '',
 };
