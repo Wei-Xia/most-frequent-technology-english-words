@@ -1,4 +1,4 @@
-import { settings } from './config/config';
+import { settings } from './utils/config';
 import express from 'express';
 import { ApolloServer } from 'apollo-server-express';
 import { typeDefs } from './typeDefs';
