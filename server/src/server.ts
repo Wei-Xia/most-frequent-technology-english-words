@@ -10,10 +10,14 @@ const startServer = async () => {
 
   const app = express();
   server.applyMiddleware({ app });
-  await mongoose.connect(settings.mongodbURL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  await mongoose
+    .connect(settings.mongodbURL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 
   app.listen({ port: 4000 }, () =>
     console.log(
