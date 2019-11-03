@@ -47,6 +47,7 @@
 |     capacity     |   noun    |       能力、容量       |      |     `[kəˈpæsəti]` [🔈](https://www.google.com/search?q=how+to+pronounce+capacity)     |
 |     capture      |   verb    |       捕捉、抓取       |      |     `[ˈkæptʃər]` [🔈](https://www.google.com/search?q=how+to+pronounce+capture)      |
 |     caveats      |   noun    |        注意事项        |      |     `[ˈkeɪviˌæts]` [🔈](https://www.google.com/search?q=how+to+pronounce+caveats)      |
+|     cluster      |   noun    |        集群        |      |         |
 |    complexity    |   noun    |         复杂性         |      |    `[kəmˈpleksəti]` [🔈](https://www.google.com/search?q=how+to+pronounce+complexity)    |
 |    compliance    |   noun    |          合规          |      |    `[kəmˈplaɪəns]` [🔈](https://www.google.com/search?q=how+to+pronounce+compliance)    |
 |  comprehensive   | adjective |         综合的         |      |  `[ˌkɑːmprɪˈhensɪv]` [🔈](https://www.google.com/search?q=how+to+pronounce+comprehensive)   |
@@ -77,7 +78,8 @@
 |   evolution     |   noun    |        进化、演变       |      |    `[ˌiːvəˈluːʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+evolution)    |
 |   expenditure    |   noun    |       支出，经费       |      |   `[ɪkˈspendɪtʃər]` [🔈](https://www.google.com/search?q=how+to+pronounce+expenditure)    |
 |     explicit     | adjective |       明确清楚的       |      |     `[ɪkˈsplɪsɪt]` [🔈](https://www.google.com/search?q=how+to+pronounce+explicit)     |
-|     failover     |   noun    |        故障切换        |      |     `[feil'əuvər]` [🔈](https://www.google.com/search?q=how+to+pronounce+failover)     |
+|     failover     |   noun    |        失效转移        |    即当 A 无法为客户服务时，系统能够自动地切换，使 B 能够及时地顶上继续为客户提供服务，且客户感觉不到这个为他提供服务的对象已经更换  |     `[feil'əuvər]` [🔈](https://www.google.com/search?q=how+to+pronounce+failover)     |
+|     failback     |   noun    |        自动恢复        |   在簇（Data Cluster）网络系统中，由于某台服务器要进行维修，需要网络资源和服务暂时重定向到备用系统。在此之后将网络资源和服务器恢复为由原始主机提供的过程，称为自动恢复。  |     |
 |    federation    |   noun    |        联合授权        |      |    `[ˌfedəˈreɪʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+federation)    |
 |    furthermore    |   adjective    |        此外        |      |   `[ˌfɜːrðərˈmɔːr]` [🔈](https://www.google.com/search?q=how+to+pronounce+furthermore)    |
 |     granular     | adjective |         颗粒的         |      |     `[ˈɡrænjələr]` [🔈](https://www.google.com/search?q=how+to+pronounce+granular)     |
@@ -88,7 +90,7 @@
 |     incident     |   noun    |          事故          |      |     `[ˈɪnsɪdənt]` [🔈](https://www.google.com/search?q=how+to+pronounce+incident)     |
 |    inexplicit    | adjective |       含糊不清的       |      |    `[ˌɪnɪkˈsplɪsɪt]` [🔈](https://www.google.com/search?q=how+to+pronounce+inexplicit)    |
 |  infrastructure  |   noun    |        基础结构        |      |  `[ˈɪnfrəstrʌktʃər]` [🔈](https://www.google.com/search?q=how+to+pronounce+infrastructure)  |
-|    initiatives    |   noun    |       方案、倡议       |      |    `[ɪˈnɪʃətɪvz]` [🔈](https://www.google.com/search?q=how+to+pronounce+inititives)    |
+|    initiatives    |   noun    |       方案、倡议       |      |    `[ɪˈnɪʃətɪvz]` [🔈](https://www.google.com/search?q=how+to+pronounce+initiatives)    |
 |   integration    |   noun    |          集成          |      |   `[ˌɪntɪˈɡreɪʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+integration)    |
 |    integrity     |   noun    |         完整性         |      |    `[ɪnˈteɡrəti]` [🔈](https://www.google.com/search?q=how+to+pronounce+integrity)     |
 |    interaction     |   noun    |       交互、相互影响、干涉      |      |    `[ˌɪntəˈrækʃən]` [🔈](https://www.google.com/search?q=how+to+pronounce+interaction)  |
@@ -154,3 +156,44 @@
 |   utilization    |   noun    |       利用，使用       |      |   `[ˌjuːtələˈzeɪʃn]` [🔈](https://www.google.com/search?q=how+to+pronounce+utilization)    |
 |    weaknesses    |   noun    |          劣势          |      |    `[ˈwiknəsəz]` [🔈](https://www.google.com/search?q=how+to+pronounce+weaknesses)    |
 |    workaround    |   noun    | 变通方案 |   特指方案具有迂回性质   |    `[ˈwɜːrkəraʊnd]` [🔈](https://www.google.com/search?q=how+to+pronounce+workaround)    |
+|    on-premise    |    adjective   | 预置的 |     |    |
+|    underlying    |   adjective    | 在下面的 |     |    |
+|    redundancy    |    noun   | 冗余，多余 |     |    |
+|    vulnerability    |    noun   | 易损性；弱点 |     |    |
+|    mechanism    |     noun  |机制；原理  |     |    |
+|    decouple    |   verb    | 使分离 |     |    |
+|    Faceted Search    |       | 分面搜索 |     |    |
+|    consultative    |    adjective   | 咨询的 |     |    |
+|    periodically    |   adjective    | 定期地；周期性地； |     |    |
+|    bogus    |   noun   |  假的；伪造|     |    |
+|    Data Sovereignty    |       | 数据主权 |  Data sovereignty is the idea that data are subject to the laws and governance structures within the nation it is collected.   |    |
+|    trajectory    |   noun    | 轨道，轨迹 |     |    |
+|    bandwidth    |     noun  |  带宽，多余时间（人力）|   后者意思是咨询有没有足够的资源或时间来完成某件事情  |    |
+|    respective    |    adjective   |分别的，各自的  |     |    |
+|    symptoms    |    noun   | 症状；症候； |     |    |
+|    cost-effective/cost-efficient    |  adjective    | 有成本效益的；合算的  |     |    |
+|    bottleneck    |    noun   | 瓶颈 |     |    |
+|    elasticity    |     noun  |  弹性；灵活性|     |    |
+|    descent    |   noun    |下降，降序 |     |    |
+|    ascent    |   noun    | 上升，升序 |     |    |
+|    schema    |     noun  | 提要，纲要，架构 |    多用于 database schema  |    |
+|    aspect    |    noun   | 方面；方向； |     |    |
+|    revisit    |     verb  | 再访，再议 |     |    |
+|    agility    |   noun    | 敏捷；灵活； |     |    |
+|    tenancy    |    noun   |  租期 |     |    |
+|    replicas    |     noun  | 复制物 |     |    |
+|    leverage    |    verb   | 利用 |     |    |
+|    allocate    |     verb  | 分配 |     |    |
+|    scheduler    |   noun    | 时间调度程序 |     |    |
+|    mediocre    |   adjective    |普通的；平凡的 |     |    |
+|    impersonate    |    verb   | 扮演；模仿 |     |    |
+|    dead letter queue    |       | 死信队列 |  在队列服务中，那些无法发送的信息将被送至死信队列   |    |
+|    post-mortem    | noun      |  尸体解剖；事后反思（或剖析）|     |    |
+|    streamline    |   verb/noun/adjective    |流线，把…做成流线型；使合理化；  |     |    |
+|    analogy    |   noun    |类比，比喻  |     |    |
+|    tentative    |    noun   | 假设，试验 |     |    |
+|    concurrent    |   adjective    | 并发的；同时发生的 |     |    |
+|    catastrophic failover    |       | 灾难性故障转移 |     |    |
+|    semantic    |  adjective     | 语义的 |     |    |
+|    strangler pattern    |       |  绞杀者模式|  通过将特定的功能片断逐渐取代为新的应用程序和服务，逐步迁移旧系统。 随着旧系统的功能被替换，新系统最终将取代旧系统的所有功能，抑制旧系统并使其停用。   |    |
+|    false positive    |       |  |     |    |
