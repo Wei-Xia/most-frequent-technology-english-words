@@ -4,6 +4,8 @@
 
 官网：https://learn-english.dev/
 
+静态网站是基于[Anyway.ABC 安妮薇术语小词典](https://github.com/Anyway-Design/Anyway.ABC)代码库上基础上加以修改，并更新单词库而建成的。
+
 ## 入选标准
 
 - 可以是 IT 相关的词汇
