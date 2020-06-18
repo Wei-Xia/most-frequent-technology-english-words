@@ -9,7 +9,7 @@ title: IT 术语小词典
       <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <ellipse ry="30" rx="16" cy="32" cx="32" class="layer-2"></ellipse>
         <path d="M4.5 32h55M32 2v60" class="layer-2"></path>
-        <circle  r="30" cy="32" cx="32"></circle>
+        <circle r="30" cy="32" cx="32"></circle>
       </svg>
       <div>单词</div>
     </div>
@@ -49,28 +49,29 @@ title: IT 术语小词典
   </div>
 
   {% for category in site.categories %}
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    {% assign number = forloop.index %}
-    <div class="category-label"><span>0{{ number }}. {{ category_name }}</span></div>
-    {% for post in site.categories[category_name ] %}
-    <div class="item" :class=" nowPlaying == true & currentWord == '{{ post.title  | downcase }}' ? 'playing' : '' ">
-      <div class="word"><span>{{ post.word }}</span></div>
-      <div class="meaning">{{ post.meaning }}</div>
-      <div class="correct">{{ post.correct }}
-        {% if post.short == 1 %}
-        
-        {% else %}
-        <a v-on:click="playNow('{{ post.title  |  downcase }}','{{ post.customized }}')">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"  xmlns:xlink="http://www.w3.org/1999/xlink" class="audio-icon">
-            <path d="M44.2 21.8a12 12 0 0 1 0 20.5" class="ani-path"></path>
-            <path d="M50 16a20 20 0 0 1 0 32" class="ani-path-2"></path>
-            <path d="M38 6L20 24H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12l18 18z" class="ani-path-3"></path>
-          </svg>
-        </a>
-        {% endif %}
+  {% capture category_name %}{{ category | first }}{% endcapture %}
+  {% assign number = forloop.index %}
+  <div class="category-label"><span>0{{ number }}. {{ category_name }}</span></div>
+  {% for post in site.categories[category_name ] %}
+  <div class="item" id="{{ post.word }}">
+    <div class="word"><span>{{ post.word }}</span></div>
+    <div class="meaning">{{ post.meaning }}</div>
+    <div class="correct">{{ post.correct }}
+      {% if post.short == 1 %}
 
-      </div>
-      <!-- <div class="wrong">
+      {% else %}
+      <a onclick="playWordAudio('{{ post.title }}')">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink"
+          class="audio-icon">
+          <path d="M44.2 21.8a12 12 0 0 1 0 20.5" class="ani-path"></path>
+          <path d="M50 16a20 20 0 0 1 0 32" class="ani-path-2"></path>
+          <path d="M38 6L20 24H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12l18 18z" class="ani-path-3"></path>
+        </svg>
+      </a>
+      {% endif %}
+
+    </div>
+    <!-- <div class="wrong">
         {% if post.wrong == null %}
           -
         {% else %}
@@ -78,9 +79,9 @@ title: IT 术语小词典
         {% endif %}
 
       </div> -->
-      <div class="note mobile-hide"><span>{{ post.note }}<span></div>
-      </div>
-    {% endfor %}
+    <div class="note mobile-hide"><span>{{ post.note }}<span></div>
+  </div>
+  {% endfor %}
   {% endfor %}
 
 </div>

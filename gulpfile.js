@@ -2,11 +2,6 @@ var gulp = require('gulp'),
 	gulpLoadPlugins = require('gulp-load-plugins'),
 	plugins = gulpLoadPlugins();
 
-var cdnUrl = [
-	['assets/vue.js', 'https://s.anw.red/js/vue.min.js'],
-	['assets/', 'https://s.anw.red/anyway.abc/']
-];
-
 gulp.task('default', async function () {
 
 	gulp.src('_layouts/dev.html')
@@ -14,13 +9,9 @@ gulp.task('default', async function () {
 			type: 'MD5',
 			basePath: './'
 		}))
-		.pipe(plugins.batchReplace(cdnUrl))
 		.pipe(plugins.htmlmin({ collapseWhitespace: true }))
-		.pipe(plugins.rename("production.html"))
 		.pipe(gulp.dest('_layouts'));
 
 	gulp.src('assets/*.css')
 		.pipe(plugins.cleanCss({ compatibility: 'ie8' }))
-		.pipe(plugins.batchReplace(cdnUrl))
-		.pipe(gulp.dest('builds'));
 });

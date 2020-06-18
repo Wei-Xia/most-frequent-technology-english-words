@@ -2,27 +2,24 @@
 <html lang="zh-cmn-Hans">
 
 <head>
-	<meta charset="UTF-8" />
+	<meta charset="UTF-8">
 	<title>{{ page.title }}</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
-	<meta name="author" content="JJ Ying" />
-	<meta name="description" content="IT 设计行业英文术语聚合站" />
-	<link rel="stylesheet" href="https://s.anw.red/anyway.abc/styles.css" />
-	<link rel="icon" href="https://s.anw.red/anyway.abc/favicon-16.png" sizes="16x16" />
-	<link rel="icon" href="https://s.anw.red/anyway.abc/favicon-32.png" sizes="32x32" />
-	<link rel="icon" href="https://s.anw.red/anyway.abc/favicon-96.png" sizes="96x96" />
-	<link rel="mask-icon" href="https://s.anw.red/anyway.fm/mask-icon.svg" color="#ffe324" />
-	<meta property="og:url" content="http://ABC.Anyway.FM" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="IT 术语小词典" />
-	<meta property="og:description" content="来自 Anyway.FM 的 UI 设计行业英文术语聚合站" />
-	<meta property="og:image" content="https://s.anw.red/anyway.abc/preview.png" />
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:description" content="来自 Anyway.FM 的 UI 设计行业英文术语聚合站" />
-	<meta name="twitter:title" content="IT 术语小词典" />
-	<meta name="twitter:site" content="@anyway__fm" />
-	<meta name="twitter:image" content="https://s.anw.red/anyway.abc/preview.png" />
-	<meta name="apple-itunes-app" content="app-id=1053786200" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="author" content="Wei Xia">
+	<meta name="description" content="IT 设计行业英文术语聚合站">
+	<link rel="stylesheet" href="/assets/styles.css?v=636b41ee2a3dfa3ddd37ada411357827">
+	<link rel="icon" href="/assets/favicon.ico">
+	<link rel="mask-icon" href="https://s.anw.red/anyway.fm/mask-icon.svg" color="#ffe324">
+	<meta property="og:url" content="http://ABC.Anyway.FM">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="IT 术语小词典">
+	<meta property="og:description" content="来自 Anyway.FM 的 UI 设计行业英文术语聚合站">
+	<meta property="og:image" content="https://s.anw.red/anyway.abc/preview.png">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:description" content="来自 Anyway.FM 的 UI 设计行业英文术语聚合站">
+	<meta name="twitter:title" content="IT 术语小词典">
+	<meta name="twitter:site" content="@anyway__fm">
+	<meta name="twitter:image" content="https://s.anw.red/anyway.abc/preview.png">
 </head>
 
 <body>
@@ -42,10 +39,12 @@
 	</header>
 	<main id="abc">
 		{{ content }}
-		<audio :src="voiceFileUrl" id="voice-file" loop preload="none"></audio>
+		<audio id="voice-file" preload="none">
+			<source id="audioSource" src="">
+			</source>
+		</audio>
 		<div class="ref">
-			<h2>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink">
 					<g fill="none" stroke="#555" stroke-miterlimit="10" stroke-width="5" stroke-linejoin="round"
 						stroke-linecap="round">
 						<path
@@ -53,9 +52,7 @@
 						</path>
 						<path d="M18.1 46L46 18.1"></path>
 					</g>
-				</svg>
-				<span>参考链接</span>
-			</h2>
+				</svg> <span>参考链接</span></h2>
 			<ol>
 				<li><a href="https://zhuanlan.zhihu.com/c_87416856"><span>01</span>知乎专栏：这个控件叫什么</a></li>
 				<li><a href="https://developer.apple.com/ios/human-interface-guidelines/controls/buttons/"><span>02</span>Apple
@@ -64,11 +61,10 @@
 		</div>
 	</main>
 	<div class="the-end">
-		<p></p>
-		To be Continued...
+		<p></p>To be Continued...
 	</div>
 	<footer>
-		<div class="inner">© 2018 <a href="https://anyway.fm">Anyway.FM</a> 保留所有权利</a></div>
+		<div class="inner">© 2018 <a href="https://anyway.fm">Anyway.FM</a> 保留所有权利</div>
 	</footer>
 	<div class="mask mt"></div>
 	<div class="mask mb"></div>
@@ -88,48 +84,19 @@
 				fill="#ffe324" />
 		</svg>
 	</div>
-	<script src="https://s.anw.red/js/vue.min.js"></script>
 	<script>
-		var a = new Vue({
-			el: "#abc",
-			data: {
-				nowPlaying: false,
-				voiceFileUrl: "http://dict.youdao.com/dictvoice?audio=anyway&type=2",
-				currentWord: "anyway",
-			},
-			methods: {
-				playNow: function (word, isCustomized) {
-					if (word == a.currentWord) {
-						audio.pause();
-						a.nowPlaying = !a.nowPlaying;
-						if (a.nowPlaying == true) {
-							var newAudio = setTimeout("audio.play()", 50);
-						}
-					} else {
-						a.nowPlaying = true;
-						a.currentWord = word;
-
-						if (isCustomized == "1") {
-							a.voiceFileUrl =
-								"https://s.anw.red/anyway.abc/audio/" +
-								a.currentWord +
-								".mp3";
-						} else {
-							a.voiceFileUrl =
-								"http://dict.youdao.com/dictvoice?audio=" +
-								a.currentWord +
-								"&type=2";
-						}
-
-						var newAudio = setTimeout("audio.play()", 50);
-					}
-				},
-			},
-		});
-
-		window.onload = function () {
-			audio = document.getElementById("voice-file");
-		};
+		function playWordAudio(word) {
+			voiceFileUrl = `http://dict.youdao.com/dictvoice?audio=${word}&type=2`;
+			const audio = document.getElementById("voice-file");
+			document.getElementById('audioSource').src = voiceFileUrl;
+			audio.load();
+			audio.play();
+			const wordEle = document.getElementById(word.toLowerCase());
+			wordEle.classList.add('playing');
+			setTimeout(() => {
+				wordEle.classList.remove('playing');
+			}, 1000);
+		}
 	</script>
 </body>
 
