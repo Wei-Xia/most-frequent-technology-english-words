@@ -14,4 +14,5 @@ gulp.task('default', async function () {
 
 	gulp.src('assets/*.css')
 		.pipe(plugins.cleanCss({ compatibility: 'ie8' }))
+		.pipe(gulp.dest('build'));
 });
