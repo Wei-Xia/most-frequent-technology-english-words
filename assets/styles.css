@@ -11,8 +11,7 @@ html {
   background: #fff;
 }
 body {
-  font-family: "Anyway Type", "Myriad Pro", "PingFang SC", "Hiragino Sans GB",
-    "Microsoft YaHei", sans-serif;
+  font-family: "Vollkorn", Palatino, Times;
   color: #555;
   text-align: center;
   background: #f5f5f5;
@@ -38,31 +37,7 @@ ol,
 ul {
   list-style-position: inside;
 }
-@font-face {
-  font-family: "Anyway Type";
-  src: url(https://s.anw.red/font/calluna-sans-regular.woff2) format("woff2"),
-    url(https://s.anw.red/font/calluna-sans-regular.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: fallback;
-}
-@font-face {
-  font-family: "Anyway Type";
-  src: url(https://s.anw.red/font/calluna-sans-bold.woff2) format("woff2"),
-    url(https://s.anw.red/font/calluna-sans-bold.woff) format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: fallback;
-}
-@font-face {
-  font-family: "Anyway Serif";
-  src: url(https://s.anw.red/font/calluna-bold.woff) format("woff"),
-    url(https://s.anw.red/font/calluna-bold.woff2) format("woff2"),
-    url(https://s.anw.red/font/calluna-bold.eot) format("eot");
-  font-weight: 700;
-  font-style: normal;
-  font-display: fallback;
-}
+
 .mask {
   position: fixed;
   z-index: 999;
@@ -198,8 +173,7 @@ h1 {
   color: #333;
   font-weight: 700;
   font-feature-settings: "tnum";
-  font-family: "Anyway Serif", "Title Serif", "Source Han Serif SC", "Songti SC",
-    SimSun, serif;
+  font-family: "Vollkorn", Palatino, Times;
   display: block;
   text-align: left;
   margin: 0 1em 0 0;
@@ -216,7 +190,7 @@ h1 sup {
   background: #444;
   color: #fff;
   padding: 0.22em 0.3em 0.1em;
-  font-family: "Anyway Type", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "Vollkorn", Palatino, Times;
   font-weight: 400;
   position: absolute;
   display: inline-block;
