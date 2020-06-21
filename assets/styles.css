@@ -237,6 +237,7 @@ h1 sup {
   transition: all 0.25s cubic-bezier(0.5, 0, 0.5, 0.5) 0s;
   font-size: 0.875rem;
   background: #fff;
+  align-items: center;
 }
 .item:nth-child(2n) {
   background: #fbfbfb;
@@ -297,11 +298,9 @@ h1 sup {
   padding: 0.2em 1rem;
   display: flex;
   align-items: center;
-  margin: 2.5em 0 0;
+  margin: 2em 0 0;
 }
-.category-label:nth-child(2) {
-  margin: 0;
-}
+
 .word {
   flex-basis: 15%;
   font-weight: 700;
@@ -336,7 +335,6 @@ h1 sup {
   flex-basis: 25%;
   font-weight: 400;
   display: flex;
-  align-items: center;
 }
 .correct {
   flex-basis: 20%;
@@ -392,13 +390,11 @@ h1 sup {
 .wrong {
   flex-basis: 15%;
   display: flex;
-  align-items: center;
 }
 .note {
   flex-grow: 2;
   flex-basis: 15%;
   display: flex;
-  align-items: center;
 }
 .note a {
   text-decoration: underline;
