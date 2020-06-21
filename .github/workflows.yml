@@ -3,7 +3,10 @@ name: most-frequent-technology-english-words
 on:
   push:
     branches:
-      - wei-44
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   deploy:
