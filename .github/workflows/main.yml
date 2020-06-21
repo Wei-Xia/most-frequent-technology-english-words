@@ -21,11 +21,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      # Standard usage
-      - uses: lemonarc/jekyll-action@1.0.0
+      # Build Jekyll
+      - name: build jekyll
+        uses: lemonarc/jekyll-action@1.0.0
 
-      # Example deployment: Push to S3
-      - name: Configure AWS credentials
+      # Push build dir into AWS S3
+      - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -41,17 +42,19 @@ jobs:
         uses: chetan/invalidate-cloudfront-action@master
         env:
           DISTRIBUTION: ${{ secrets.DISTRIBUTION_ID }}
-          PATHS: "*"
+          PATHS: "/*"
           AWS_REGION: "us-east-1"
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
+      # Send Slack message
       - name: send slack notification
         uses: rtCamp/action-slack-notify@v2.0.2
         env:
           SLACK_CHANNEL: build-log
           SLACK_MESSAGE: "Deployment is successful"
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_ICON_EMOJI: ":ship:"
-          SLACK_USERNAME: vscode-actions
-          SLACK_COLOR: "#FF0000"
+          SLACK_USERNAME: GitHub Actions
+          SLACK_COLOR: "#2EB887"
+          SLACK_TITLE: "Message"
+          SLACK_ICON: https://avatars2.githubusercontent.com/u/44036562?s=400&v=4
