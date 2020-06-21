@@ -32,9 +32,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-      - name: Sync output to S3
+      - name: Copy files to the test website with the AWS CLI
         run: |
-          aws s3 sync ./_site/ s3://learn-english.dev --delete
+          aws s3 sync ./_site/ s3://learn-english.dev
 
       # Invalidate Cloudfront
       - name: invalidate aws cloudfront
