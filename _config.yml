@@ -2,15 +2,16 @@ name: Anyway.ABC
 permalink: /:title
 
 exclude:
-  [
-    "CNAME",
-    "node_modules",
-    "README.md",
-    "README2.md",
-    "Gemfile",
-    "Gemfile.lock",
-    "package.json",
-    "package-lock.json",
-    "LICENSE",
-    "gulpfile.js",
-  ]
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - CNAME
+  - README.md
+  - package.json
+  - package-lock.json
+  - LICENSE
+  - gulpfile.js
