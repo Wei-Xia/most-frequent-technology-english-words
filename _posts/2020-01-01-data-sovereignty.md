@@ -2,6 +2,6 @@
 word: data sovereignty
 meaning: 数据主权
 correct: /null/
-note: Data sovereignty is the idea that data are subject to the laws and governance structures within the nation it is collected.
+note: 数据主权指的是在该国或地区采集的数据应当归属于当地政府且需服从当地法律法规
 category: 词组
 ---
