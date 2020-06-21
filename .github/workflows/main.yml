@@ -9,27 +9,35 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       - run: npm install
       - run: gulp
 
-      # Build Jeklly dir
-      - name: Build
-        uses: jerryjvl/jekyll-build-action@v1
-
-      # Push files to AWS S3
-      - uses: jakejarvis/s3-sync-action@master
+      # Use GitHub Actions' cache to shorten build times and decrease load on servers
+      - uses: actions/cache@v1
         with:
-          args: --acl public-read --follow-symlinks --delete
-        env:
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: "us-west-1"
-          SOURCE_DIR: "_site"
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      # Standard usage
+      - uses: lemonarc/jekyll-action@1.0.0
+
+      # Example deployment: Push to S3
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Sync output to S3
+        run: |
+          aws s3 sync ./_site/ s3://learn-english.dev --delete
 
       # Invalidate Cloudfront
-      - name: invalidate
+      - name: invalidate aws cloudfront
         uses: chetan/invalidate-cloudfront-action@master
         env:
           DISTRIBUTION: ${{ secrets.DISTRIBUTION_ID }}
@@ -38,7 +46,7 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
-      - name: Slack Notification
+      - name: send slack notification
         uses: rtCamp/action-slack-notify@v2.0.2
         env:
           SLACK_CHANNEL: build-log
