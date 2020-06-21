@@ -33,7 +33,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-      - name: Copy files to the test website with the AWS CLI
+      - name: Copy files to the s3 website with the AWS CLI
         run: |
           aws s3 sync ./_site/ s3://learn-english.dev
 
@@ -56,5 +56,5 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_USERNAME: GitHub Actions
           SLACK_COLOR: "#2EB887"
-          SLACK_TITLE: "Message"
+          SLACK_TITLE: Message
           SLACK_ICON: https://avatars2.githubusercontent.com/u/44036562?s=400&v=4
