@@ -12,9 +12,12 @@ jobs:
       - uses: actions/checkout@master
       - run: npm install
       - run: gulp
-      - name: Build and deploy
-        uses: victoriadrake/jekyll-cd@master
-      - run: bundle exec jekyll build
+
+      # Build Jeklly dir
+      - name: Build
+        uses: jerryjvl/jekyll-build-action@v1
+
+      # Push files to AWS S3
       - uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks --delete
@@ -25,7 +28,7 @@ jobs:
           AWS_REGION: "us-west-1"
           SOURCE_DIR: "_site"
 
-      # Invalidate Cloudfront (this action)
+      # Invalidate Cloudfront
       - name: invalidate
         uses: chetan/invalidate-cloudfront-action@master
         env:
@@ -35,7 +38,6 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
-      - uses: actions/checkout@v2
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@v2.0.2
         env:
