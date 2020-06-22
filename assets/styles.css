@@ -493,6 +493,7 @@ h2 {
     font-size: 0.75rem;
     top: 0.2rem;
   }
+  .item-header .wrong,
   .item-header .note,
   .item-header .word {
     display: none;
