@@ -1,7 +1,7 @@
 ---
 word: optimization
 meaning: 优化
-correct: /ˌɑptəmɪ'zeʃən/
+correct: /ˌɑptəmɪˈzeʃən/
 note:
 category: 名词
 ---
