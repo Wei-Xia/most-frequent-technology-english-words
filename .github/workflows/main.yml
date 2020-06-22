@@ -1,4 +1,4 @@
-name: most-frequent-technology-english-words
+name: build & deploy
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build-and-deploy:
+  master:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
