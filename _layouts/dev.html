@@ -30,10 +30,8 @@
 			<div class="tagline">
 				<ol>
 					<li><span>01</span> IT 行业英文术语聚合</li>
-					<!-- <li><span>02</span>配合本台<a href="https://Anyway.FM/terms-in-english/#title">第 62 期</a>、<a
-							href="https://Anyway.FM/ui-terms-1/#title">第 38 期</a>节目服用效果更佳</li>
-					<li><span>03</span>为啥下面标的都是美音？「我……乐……意……」</li>
-					<li><span>04</span>其他方面的反馈和纠错可直接<a href="mailto:hello@anyway.fm">邮件我们</a></li> -->
+					<li><span>02</span> 本站 Github <a
+							href="https://github.com/Wei-Xia/most-frequent-technology-english-words">源代码</a>，欢迎打星⭐，提 issue</li>
 				</ol>
 			</div>
 		</div>
@@ -60,7 +58,7 @@
 	</div>
 	<footer>
 		<div class="inner">Made by <a href="https://weixia.dev/">Wei Xia</a> based on <a
-				href="https://abc.anyway.fm/">Anyway.FM</a></div>
+				href="https://abc.anyway.fm/">Anyway.ABC</a></div>
 	</footer>
 	<div class="x-corner x-corner-l"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
 			<path d="M0 49.9L50 49.9C32.6 49.9 26.3 48.1 20 44.7 13.6 41.3 8.6 36.3 5.2 29.9 1.8 23.6 0 17.3 0-0.1L0 49.9Z"
@@ -68,25 +66,13 @@
 	<div class="x-corner x-corner-r"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
 			<path d="M0 49.9L50 49.9C32.6 49.9 26.3 48.1 20 44.7 13.6 41.3 8.6 36.3 5.2 29.9 1.8 23.6 0 17.3 0-0.1L0 49.9Z"
 				fill="#ffe324" /></svg></div>
-	<script>function playWordAudio(w) {
-			word = w.toLowerCase();
-			voiceFileUrl = `http://dict.youdao.com/dictvoice?audio=${word}&type=2`;
-			const audio = document.getElementById("voice-file");
-			document.getElementById('audioSource').src = voiceFileUrl;
-			audio.load();
-			audio.play();
-			const wordEle = document.getElementById(word);
-			wordEle.classList.add('playing');
-			setTimeout(() => {
-				wordEle.classList.remove('playing');
-			}, 1000);
-		}</script>
+	<script src="/assets/script.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142807294-1"></script>
 	<script>window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
-		gtag('config', 'UA-142807294-1');</script>
+		gtag('config', 'UA-142807294-1');
+	</script>
 </body>
 
 </html>
