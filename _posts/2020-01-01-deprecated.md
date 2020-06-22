@@ -1,7 +1,7 @@
 ---
 word: deprecated
 meaning: 弃用的
-correct: /'dɛprəˌketɪd/
+correct: /ˈdɛprəˌketɪd/
 note:
 category: 形容词
 ---
