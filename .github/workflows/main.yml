@@ -35,8 +35,7 @@ jobs:
 
       - name: Copy files to the s3 website with the AWS CLI
         run: |
-          aws s3 sync ./_site/index.html s3://learn-english.dev
-          aws s3 sync ./_site/assets s3://learn-english.dev
+          aws s3 sync ./_site/ s3://learn-english.dev
 
       # Invalidate Cloudfront
       - name: invalidate aws cloudfront
