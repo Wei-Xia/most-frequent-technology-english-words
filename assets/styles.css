@@ -24,7 +24,7 @@ a {
   transition: all 0.1s ease-in-out;
 }
 ::selection {
-  background: #ffe324;
+  background: #ddf3f5;
   color: #000;
   text-shadow: none;
   transition: all 0.15s ease-in-out;
@@ -37,10 +37,6 @@ ol,
 ul {
   list-style-position: inside;
 }
-
-.x-corner {
-  display: none;
-}
 .the-end {
   font-size: 2rem;
   margin: 0 0 3rem;
@@ -50,7 +46,7 @@ ul {
   width: 1.6rem;
   margin: 0 auto 0.75rem;
   height: 1.6rem;
-  background: #ffe324;
+  background: #5fdde5;
   animation: square-rotate 10s ease-in-out infinite;
 }
 @keyframes square-rotate {
@@ -160,7 +156,7 @@ h1 sup {
 }
 .tagline ol span {
   font-weight: 400;
-  background: #ffe324;
+  background: #cfe5cf;
   padding: 0.1em 0.25em 0.15em;
   color: #333;
   margin: 0 0.3em 0 0;
@@ -173,7 +169,7 @@ h1 sup {
   font-weight: 700;
 }
 .tagline a:hover {
-  background: #ffe324;
+  background: #ddf3f5;
   color: #333;
 }
 .item {
@@ -191,7 +187,7 @@ h1 sup {
   background: #fbfbfb;
 }
 .item:hover {
-  background: #ffe324;
+  background: #ddf3f5;
   color: #222;
 }
 .item-header {
@@ -259,10 +255,10 @@ h1 sup {
   transition: all 0.25s cubic-bezier(0.5, 0, 0.5, 0.5) 0s;
 }
 .item:hover .word span {
-  text-shadow: 1px 0 0 #ffe324, -1px 0 0 #ffe324, 1px 0 0 #ffe324;
+  text-shadow: 1px 0 0 #ddf3f5, -1px 0 0 #ddf3f5, 1px 0 0 #ddf3f5;
 }
 .word span:after {
-  background: #ffe324;
+  background: #3ca59d;
   position: absolute;
   width: 100%;
   height: 2px;
@@ -375,7 +371,7 @@ h2 {
 }
 .ref ol span {
   font-weight: 400;
-  background: #ffe324;
+  background: #cfe5cf;
   padding: 0.1em 0.25em 0.15em;
   color: #333;
   margin: 0 0.4em 0 0;
@@ -391,7 +387,7 @@ h2 {
   padding: 0.1em 0.15em 0.15em 0;
 }
 .ref a:hover {
-  background: #ffe324;
+  background: #ddf3f5;
 }
 @media screen and (max-width: 1200px) {
   h1 {
