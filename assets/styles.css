@@ -24,7 +24,7 @@ a {
   transition: all 0.1s ease-in-out;
 }
 ::selection {
-  background: #ffe324;
+  background: #ddf3f5;
   color: #000;
   text-shadow: none;
   transition: all 0.15s ease-in-out;
@@ -37,62 +37,6 @@ ol,
 ul {
   list-style-position: inside;
 }
-
-.mask {
-  position: fixed;
-  z-index: 999;
-  border: 0.4rem solid #ffe324;
-  background: #ffe324;
-  pointer-events: none;
-}
-.mb,
-.mt {
-  height: 0;
-  width: 100%;
-  left: 0;
-}
-.mb {
-  bottom: -20rem;
-  height: 20.8rem;
-}
-.mb2 {
-  bottom: 0.8rem;
-  height: 2rem;
-  width: 200px;
-  border: none;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 0,
-    rgba(255, 255, 255, 1) 100%
-  );
-}
-.mt {
-  top: -20rem;
-  height: 20.8rem;
-}
-.mv {
-  bottom: 0;
-  height: 999em;
-  width: 0;
-}
-.ml,
-.ml2 {
-  left: -20rem;
-  width: 20.8rem;
-}
-.mr,
-.mr2 {
-  right: -20rem;
-  width: 20.8rem;
-}
-.ml2,
-.mr2 {
-  bottom: none;
-  top: 0;
-}
-.x-corner {
-  display: none;
-}
 .the-end {
   font-size: 2rem;
   margin: 0 0 3rem;
@@ -102,7 +46,7 @@ ul {
   width: 1.6rem;
   margin: 0 auto 0.75rem;
   height: 1.6rem;
-  background: #ffe324;
+  background: #5fdde5;
   animation: square-rotate 10s ease-in-out infinite;
 }
 @keyframes square-rotate {
@@ -212,7 +156,7 @@ h1 sup {
 }
 .tagline ol span {
   font-weight: 400;
-  background: #ffe324;
+  background: #cfe5cf;
   padding: 0.1em 0.25em 0.15em;
   color: #333;
   margin: 0 0.3em 0 0;
@@ -225,7 +169,7 @@ h1 sup {
   font-weight: 700;
 }
 .tagline a:hover {
-  background: #ffe324;
+  background: #ddf3f5;
   color: #333;
 }
 .item {
@@ -243,7 +187,7 @@ h1 sup {
   background: #fbfbfb;
 }
 .item:hover {
-  background: #ffe324;
+  background: #ddf3f5;
   color: #222;
 }
 .item-header {
@@ -262,9 +206,7 @@ h1 sup {
   box-shadow: 0 -0.1em 0 #fff;
   z-index: 9;
 }
-.item-header:hover {
-  background: #fff;
-}
+
 .item-header div {
   line-height: 0.875rem;
   vertical-align: top;
@@ -313,10 +255,10 @@ h1 sup {
   transition: all 0.25s cubic-bezier(0.5, 0, 0.5, 0.5) 0s;
 }
 .item:hover .word span {
-  text-shadow: 1px 0 0 #ffe324, -1px 0 0 #ffe324, 1px 0 0 #ffe324;
+  text-shadow: 1px 0 0 #ddf3f5, -1px 0 0 #ddf3f5, 1px 0 0 #ddf3f5;
 }
 .word span:after {
-  background: #ffe324;
+  background: #3ca59d;
   position: absolute;
   width: 100%;
   height: 2px;
@@ -429,7 +371,7 @@ h2 {
 }
 .ref ol span {
   font-weight: 400;
-  background: #ffe324;
+  background: #cfe5cf;
   padding: 0.1em 0.25em 0.15em;
   color: #333;
   margin: 0 0.4em 0 0;
@@ -445,7 +387,7 @@ h2 {
   padding: 0.1em 0.15em 0.15em 0;
 }
 .ref a:hover {
-  background: #ffe324;
+  background: #ddf3f5;
 }
 @media screen and (max-width: 1200px) {
   h1 {
@@ -465,9 +407,7 @@ h2 {
   .mobile-hide {
     display: none;
   }
-  .mask {
-    border-width: 0.2rem;
-  }
+
   header {
     padding: 5rem 1rem 4rem;
   }
@@ -516,12 +456,5 @@ h2 {
   .ref ol {
     column-count: 1;
     font-size: 1rem;
-  }
-  .mb,
-  .mt {
-    height: 20.4rem;
-  }
-  .mv {
-    width: 20.4rem;
   }
 }
