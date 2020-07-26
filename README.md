@@ -6,6 +6,9 @@
 
 官网：https://learn-english.dev/
 
+## anki记忆卡片
+* [程序员工作中常见的英语词汇记忆卡片](most-frequent-technology-english-words.apkg)
+
 ## 入选标准
 
 - 可以是 IT 相关的词汇
