@@ -34,3 +34,8 @@
 - [ ] (ongoing) 增加英语符号特辑，将英语符号单独放在一个文档里
 - [ ] 创建一个的静态网站，增加 filter 检索功能
 - [ ] 在静态网站上创建 online quiz，第一步打算以选择题的形式进行记忆测试
+
+## Get Started
+
+1. Download the repo
+2. `bundle exec jekyll serve`

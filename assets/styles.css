@@ -101,7 +101,7 @@ main {
   }
 }
 header {
-  padding: 8rem 0 9rem;
+  padding: 5rem 0 7rem;
   background: #f5f5f5;
 }
 header .inner {
@@ -457,4 +457,22 @@ h2 {
     column-count: 1;
     font-size: 1rem;
   }
+}
+
+.wechat:hover:after {
+  content: url(./wechat.jpg);
+  position: absolute;
+}
+
+.wechat {
+  background: #e1f2f4 !important;
+}
+
+.alipay:hover:after {
+  content: url(./alipay.jpg);
+  position: absolute;
+}
+
+.alipay {
+  background: #e1f2f4 !important;
 }
