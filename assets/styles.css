@@ -198,7 +198,7 @@ h1 sup {
   padding: 1em 1rem;
   position: -webkit-sticky;
   position: sticky;
-  top: 0.8rem;
+  top: 0;
   font-weight: 400;
   color: #666;
   background: #fff;
