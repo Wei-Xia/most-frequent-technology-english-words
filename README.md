@@ -18,8 +18,16 @@
 
 ## Get Started
 
-1. Download the repo
-2. `bundle exec jekyll serve`
+0. Install ruby
+`brew install ruby`
+1. Install bundler (globally)
+`sudo gem install bundler --no-user-install`
+2. Clone the repo
+3. Install dependencies
+`bundle install`
+4. Launch local server
+`bundle exec jekyll serve`
+5. Visit `http://127.0.0.1:4000`
 
 ## anki 记忆卡片
 
