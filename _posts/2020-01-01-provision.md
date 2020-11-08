@@ -1,7 +1,7 @@
 ---
 word: provision
-meaning: TBD
+meaning: 规定；预备；准备
 correct: /prəˈvɪʒn/
-note:
+note: 例如对UFS设备进行provision，分区、划分LUN等操作
 category: 名词
 ---
