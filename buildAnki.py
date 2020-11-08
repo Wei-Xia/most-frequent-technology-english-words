@@ -12,7 +12,7 @@ PATH = '_posts'
 # os.makedirs(MEDIA_PATH, exist_ok=True)
 my_deck = genanki.Deck(
   2059400110,
-  '程序员工作中常见的英语词汇')
+  '程序员英语词汇宝典')
 
 
 my_model = genanki.Model(
