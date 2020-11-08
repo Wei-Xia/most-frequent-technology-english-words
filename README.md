@@ -18,11 +18,11 @@
 
 ## Get Started
 
-1. Install ruby: `brew install ruby`
-2. Install bundler (globally): `sudo gem install bundler --no-user-install`
+1. Install Ruby: `brew install ruby`
+2. Install Bundler globally: `sudo gem install bundler --no-user-install`
 3. Clone the repo
 4. Install dependencies: `bundle install`
-5. Launch local server: `bundle exec jekyll serve`
+5. Launch the project from local server: `bundle exec jekyll serve`
 6. Visit `http://127.0.0.1:4000`
 
 ## Anki 记忆卡片
