@@ -2,6 +2,7 @@ import os
 from tqdm import tqdm
 import requests
 import genanki
+import html
 
 
 voice_url = 'http://dict.youdao.com/dictvoice?type=2&audio={word}'
@@ -36,6 +37,7 @@ for filename in tqdm(os.listdir(PATH)):
   word = filename.split('-')[-1][:-3]  # eg 2020-01-01-agile.md
   filePath = os.path.join(PATH, filename)
   content = open(filePath, encoding='utf-8').read()
+  content = html.escape(content);
   content = content.replace('\n','<br/>')
   voicePath = '{}.mp3'.format(word) # os.path.join(MEDIA_PATH, '{}.mp3'.format(word))
   r = requests.get(voice_url.format(word=word))
