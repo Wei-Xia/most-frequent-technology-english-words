@@ -35,7 +35,7 @@ my_package = genanki.Package(my_deck)
 for filename in tqdm(os.listdir(PATH)):
   word = filename.split('-')[-1][:-3]  # eg 2020-01-01-agile.md
   filePath = os.path.join(PATH, filename)
-  content = open(filePath).read()
+  content = open(filePath, encoding='utf-8').read()
   content = content.replace('\n','<br/>')
   voicePath = '{}.mp3'.format(word) # os.path.join(MEDIA_PATH, '{}.mp3'.format(word))
   r = requests.get(voice_url.format(word=word))
