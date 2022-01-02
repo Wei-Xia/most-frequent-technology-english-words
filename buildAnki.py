@@ -34,8 +34,9 @@ def doFy(word):
 os.makedirs(MEDIA_PATH, exist_ok=True)
 os.chdir(MEDIA_PATH)
 
+deckId = 2059400110
 my_deck = genanki.Deck(
-  2059400110,
+  deckId,
   '程序员英语词汇宝典')
 
 
@@ -238,7 +239,7 @@ for filename in tqdm(os.listdir(PATH)):
   f = open(voicePath,'wb')
   f.write(r.content)
   f.close();
-  guid = str(uuid.uuid3(uuid.NAMESPACE_OID, word));
+  guid = str(uuid.uuid3(uuid.NAMESPACE_OID, str(deckId) + word));
   my_note = genanki.Note(
     model=my_model,
     fields=[word, content, '[sound:{}]'.format(voicePath), fyWord], guid=guid)
