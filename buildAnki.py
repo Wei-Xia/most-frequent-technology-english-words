@@ -9,8 +9,8 @@ import uuid
 import sys
 
 voice_url = 'http://dict.youdao.com/dictvoice?type=2&audio={word}'
-PATH = '_posts'
-#MEDIA_PATH = 'build'
+PATH = '../_posts'
+MEDIA_PATH = 'build'
 
 fy_url = 'http://youdao.com/w/eng/{word}'
 
@@ -31,7 +31,9 @@ def doFy(word):
   else:
      return p1;
 
-#os.makedirs(MEDIA_PATH, exist_ok=True)
+os.makedirs(MEDIA_PATH, exist_ok=True)
+os.chdir(MEDIA_PATH)
+
 my_deck = genanki.Deck(
   2059400110,
   '程序员英语词汇宝典')
