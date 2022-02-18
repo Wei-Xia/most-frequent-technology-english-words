@@ -2,6 +2,6 @@
 word: deprecated
 meaning: 弃用的
 correct: /ˈdɛprəˌketɪd/
-note:
-category: 形容词
+note: deprecate 的过去式和过去分词
+category: 动词
 ---
