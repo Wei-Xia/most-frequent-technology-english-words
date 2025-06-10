@@ -1,60 +1,89 @@
-name: build & deploy
+name: Build & Deploy
 
 on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
-  master:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: npm install
-      - run: gulp
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      # Use GitHub Actions' cache to shorten build times and decrease load on servers
-      - uses: actions/cache@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
+          node-version: '16'
+          cache: 'npm'
 
-      # Build Jekyll
-      - name: build jekyll
-        uses: lemonarc/jekyll-action@1.0.0
+      - name: Install Node.js dependencies
+        run: npm ci
 
-      # Push build dir into AWS S3
-      - name: configure aws credentials
-        uses: aws-actions/configure-aws-credentials@v1
+      - name: Run Gulp tasks
+        run: npx gulp
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build Anki deck
+        run: python buildAnki.py
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-      - name: Copy files to the s3 website with the AWS CLI
+      - name: Deploy to S3
+        run: aws s3 sync ./_site/ s3://learn-english.dev --delete
+
+      - name: Invalidate CloudFront cache
         run: |
-          aws s3 sync ./_site/ s3://learn-english.dev
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.DISTRIBUTION_ID }} \
+            --paths "/*"
 
-      # Invalidate Cloudfront
-      - name: invalidate aws cloudfront
-        uses: chetan/invalidate-cloudfront-action@master
-        env:
-          DISTRIBUTION: ${{ secrets.DISTRIBUTION_ID }}
-          PATHS: "/*"
-          AWS_REGION: "us-east-1"
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Upload Anki deck as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: anki-deck
+          path: most-frequent-technology-english-words.apkg
 
-      # Send Slack message
-      - name: send slack notification
-        uses: rtCamp/action-slack-notify@v2.0.2
+      - name: Send Slack notification
+        uses: slackapi/slack-github-action@v1.23.0
+        with:
+          payload: |
+            {
+              "text": "🚀 程序员英语词汇宝典已成功部署！",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*程序员英语词汇宝典已成功部署！* 🚀\n网站: <https://learn-english.dev|learn-english.dev>"
+                  }
+                }
+              ]
+            }
         env:
-          SLACK_CHANNEL: build-log
-          SLACK_MESSAGE: "Deployment is successful"
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_USERNAME: GitHub Actions
-          SLACK_COLOR: "#2EB887"
-          SLACK_TITLE: Message
-          SLACK_ICON: https://avatars2.githubusercontent.com/u/44036562?s=400&v=4
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK

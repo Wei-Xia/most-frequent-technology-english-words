@@ -14,6 +14,18 @@
 
 - 请直接提 issue 来增加需要添加的新功能或单词列表
 
+## 本地开发
+
+### 使用 Docker (推荐)
+
+```bash
+# 构建并启动容器
+docker-compose up
+
+# 访问网站
+open http://localhost:4000
+```
+
 ## Get Started
 
 1. Install Ruby: `brew install ruby`

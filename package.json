@@ -1,13 +1,17 @@
 {
+  "name": "most-frequent-technology-english-words",
+  "version": "2.0.0",
+  "description": "程序员英语词汇宝典",
+  "scripts": {
+    "dev": "jekyll serve --livereload",
+    "build": "jekyll build"
+  },
   "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-batch-replace": "*",
-    "gulp-cache-bust": "*",
-    "gulp-clean-css": "*",
-    "gulp-htmlmin": "*",
-    "gulp-load-plugins": "*",
-    "gulp-rename": "*",
-    "gulp-svgo": "*",
-    "gulp-watch": "*"
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

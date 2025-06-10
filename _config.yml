@@ -1,17 +1,25 @@
-name: Anyway.ABC
-permalink: /:title
+title: 程序员英语词汇宝典
+description: 帮助程序员掌握英语技术词汇
+baseurl: ""
+url: "https://learn-english.dev"
 
+# 构建设置
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 排除文件
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - CNAME
+  - vendor
+  - .github
+  - scripts
   - README.md
   - package.json
   - package-lock.json
-  - LICENSE
-  - gulpfile.js
+  - docker-compose.yml
+  - Dockerfile
