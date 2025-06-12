@@ -1,4 +1,4 @@
-name: Build & Deploy
+name: Deploy to AWS
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '18'
           cache: 'npm'
 
       - name: Install Node.js dependencies
@@ -28,23 +28,11 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'
+          ruby-version: '3.2'
           bundler-cache: true
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
-
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-          cache: 'pip'
-
-      - name: Install Python dependencies
-        run: pip install -r requirements.txt
-
-      - name: Build Anki deck
-        run: python buildAnki.py
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
@@ -61,12 +49,6 @@ jobs:
           aws cloudfront create-invalidation \
             --distribution-id ${{ secrets.DISTRIBUTION_ID }} \
             --paths "/*"
-
-      - name: Upload Anki deck as artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: anki-deck
-          path: most-frequent-technology-english-words.apkg
 
       - name: Send Slack notification
         uses: slackapi/slack-github-action@v1.23.0
