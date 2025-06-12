@@ -20,7 +20,8 @@ jobs:
           cache: 'npm'
 
       - name: Install Node.js dependencies
-        run: npm ci
+        run: npm install
+        # 将 npm ci 改为 npm install
 
       - name: Run Gulp tasks
         run: npx gulp
